@@ -21,7 +21,7 @@
 
 </head>
 <body>
-<div class="main " id="top">
+<div class="main" id="top">
     <header class="header">
         <div class="container">
             <div class="header__wrap">
@@ -46,6 +46,7 @@
             </div>
         </div>
     </header>
+    <div class="main__body">
 
 <div class="home-banner">
     <div class="container ">
@@ -202,6 +203,11 @@
             <div class="videos__item__right">
                 <a href="" class="videos__item__wrap">
                     <img src="images/dist/video_poster.png" width="731" height="410" alt="">
+                    <div class="videos__item__wrap__play">
+                        <svg width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9983 13.2135C18.5082 13.6139 18.5082 14.3861 17.9983 14.7865L1.86757 27.4523C1.21139 27.9675 0.25 27.5001 0.25 26.6658L0.25 1.33419C0.25 0.49991 1.21139 0.0324499 1.86757 0.547678L17.9983 13.2135Z" fill="white" />
+                        </svg>
+                    </div>
                 </a>
             </div>
         </div>
@@ -221,14 +227,178 @@
             <div class="videos__item__right">
                 <a href="" class="videos__item__wrap">
                     <img src="images/dist/video_poster.png" width="731" height="410" alt="">
+                    <div class="videos__item__wrap__play">
+                        <svg width="19" height="28" viewBox="0 0 19 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.9983 13.2135C18.5082 13.6139 18.5082 14.3861 17.9983 14.7865L1.86757 27.4523C1.21139 27.9675 0.25 27.5001 0.25 26.6658L0.25 1.33419C0.25 0.49991 1.21139 0.0324499 1.86757 0.547678L17.9983 13.2135Z" fill="white" />
+                        </svg>
+                    </div>
                 </a>
             </div>
         </div>
     </div>
 </div>
+
+<div class="news">
+    <div class="container">
+        <div class="news__header">
+            <div class="news__title">Новости проекта</div>
+            <div class="news__nav">
+                <button class="news__nav__btn" id="newsSliderPrev">
+                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd" clip-rule="evenodd" d="M23 46C10.2975 46 -2.98023e-07 35.7025 -2.98023e-07 23C-2.98023e-07 10.2975 10.2975 0 23 0C35.7025 0 46 10.2975 46 23C46 35.7025 35.7025 46 23 46Z" fill="white" />
+                        <path d="M27.0625 28.1837L21.924 23.0339L27.0625 17.8842L25.4805 16.3022L18.7488 23.0339L25.4805 29.7656L27.0625 28.1837Z" fill="#5DC5C6" />
+                    </svg>
+                </button>
+                <button class="news__nav__btn" id="newsSliderNext">
+                    <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  fill-rule="evenodd" clip-rule="evenodd" d="M23 46C35.7025 46 46 35.7025 46 23C46 10.2975 35.7025 0 23 0C10.2975 0 0 10.2975 0 23C0 35.7025 10.2975 46 23 46Z" fill="white" />
+                        <path d="M18.9375 28.1837L24.076 23.0339L18.9375 17.8842L20.5195 16.3022L27.2512 23.0339L20.5195 29.7656L18.9375 28.1837Z" fill="#5DC5C6" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="news__body">
+            <div class="swiper" id="newsSlider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <a href="" class="news__item__img">
+                                <img src="images/dist/news.jpg" width="396" height="240" loading="lazy" alt="">
+                            </a>
+                            <div class="news__item__title">
+                                Лауреатами губернаторской премии «Мы рядом. Доброе дело» в этом году стали 70 человек
+                            </div>
+                            <a href="" class="videos__item__info__link">
+                                Подробнее <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8207 10L17.6586 6.29549C18.1138 5.85615 18.1138 5.14384 17.6586 4.7045L13.8207 1M17.3173 5.5L1 5.5" stroke="#E40032" stroke-linecap="round"></path>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <a href="" class="news__item__img">
+                                <img src="images/dist/news.jpg" width="396" height="240" loading="lazy" alt="">
+                            </a>
+                            <div class="news__item__title">
+                                Лауреатами губернаторской премии «Мы рядом. Доброе дело» в этом году стали 70 человек
+                            </div>
+                            <a href="" class="videos__item__info__link">
+                                Подробнее <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8207 10L17.6586 6.29549C18.1138 5.85615 18.1138 5.14384 17.6586 4.7045L13.8207 1M17.3173 5.5L1 5.5" stroke="#E40032" stroke-linecap="round"></path>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <a href="" class="news__item__img">
+                                <img src="images/dist/news.jpg" width="396" height="240" loading="lazy" alt="">
+                            </a>
+                            <div class="news__item__title">
+                                Лауреатами губернаторской премии «Мы рядом. Доброе дело» в этом году стали 70 человек
+                            </div>
+                            <a href="" class="videos__item__info__link">
+                                Подробнее <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8207 10L17.6586 6.29549C18.1138 5.85615 18.1138 5.14384 17.6586 4.7045L13.8207 1M17.3173 5.5L1 5.5" stroke="#E40032" stroke-linecap="round"></path>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news__item">
+                            <a href="" class="news__item__img">
+                                <img src="images/dist/news.jpg" width="396" height="240" loading="lazy" alt="">
+                            </a>
+                            <div class="news__item__title">
+                                Лауреатами губернаторской премии «Мы рядом. Доброе дело» в этом году стали 70 человек
+                            </div>
+                            <a href="" class="videos__item__info__link">
+                                Подробнее <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.8207 10L17.6586 6.29549C18.1138 5.85615 18.1138 5.14384 17.6586 4.7045L13.8207 1M17.3173 5.5L1 5.5" stroke="#E40032" stroke-linecap="round"></path>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="news__footer">
+            <a href="" class="all-link">Все новости</a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="faq">
+        <div class="faq__title">
+            Часто задаваемые вопросы
+        </div>
+
+        <div class="faq__accordion">
+            <div class="faq__accordion__item">
+                <a href="#faq1" class="faq__accordion__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#faq1">
+                    Кто может участовать в конкурсном отборе?
+                </a>
+                <div class="accordion-collapse collapse" id="faq1">
+                    <div class="faq__accordion__item__body text">
+                        <p>Основаниями для отклонения заявки участника на любой стадии конкурсного отбора являются:</p>
+                        <ul>
+                            <li>Несоответствие участника установленным требованиям</li>
+                            <li>Несоответствие представленной заявки или документов установленным требованиям</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__accordion__item">
+                <a href="#faq1" class="faq__accordion__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">
+                    Какие проекты можно подавать на премию?
+                </a>
+                <div class="accordion-collapse collapse" id="faq2">
+                    <div class="faq__accordion__item__body text">
+                        <p>Основаниями для отклонения заявки участника на любой стадии конкурсного отбора являются:</p>
+                        <ul>
+                            <li>Несоответствие участника установленным требованиям</li>
+                            <li>Несоответствие представленной заявки или документов установленным требованиям</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__accordion__item">
+                <a href="#faq1" class="faq__accordion__item__header collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">
+                    Что является основанием для отказа в участии в конкурсном отборе?
+                </a>
+                <div class="accordion-collapse collapse" id="faq3">
+                    <div class="faq__accordion__item__body text">
+                        <p>Основаниями для отклонения заявки участника на любой стадии конкурсного отбора являются:</p>
+                        <ul>
+                            <li>Несоответствие участника установленным требованиям</li>
+                            <li>Несоответствие представленной заявки или документов установленным требованиям</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div><!-- main__body-->
 <footer class="footer">
     <div class="container">
+        <div class="footer__wrap">
+            <div class="footer__col1">
+                <a href="" class="d-block">
+                    <img src="images/dist/prav.svg" loading="lazy" width="179" height="62" alt="" class="d-block">
+                </a>
+            </div>
+            <div class="footer__col2">
+                <a href="/" class="d-block">
+                    <img src="images/dist/logo2.svg" loading="lazy" width="234" height="31" alt="" class="d-block">
+                </a>
+            </div>
+            <div class="footer__col3">
 
+            </div>
+        </div>
     </div>
 </footer>
 
