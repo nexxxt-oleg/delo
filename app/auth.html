@@ -1,0 +1,49 @@
+<!--#set var="title" value="Войти" -->
+<!--#include virtual="/parts/header2.html" -->
+<div class="form-box">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="form-box__wrap">
+                    <div class="form-box__wrap__header">
+                        <a href="" class="active">Войти</a>
+                        <a href="" >Регистрация</a>
+                    </div>
+                    <form action="">
+                        <div class="form-box__inp-row">
+                            <label class="form-box__inp-row__label" for="email">
+                                E-mail
+                            </label>
+                            <input autocomplete="off" required type="email" name="email" id="email" class="form-box__inp-row__input">
+                        </div>
+                        <div class="form-box__inp-row">
+                            <label class="form-box__inp-row__label" for="pass">
+                                Пароль
+                            </label>
+                            <div class="form-box__inp-row__pass">
+                                <input type="password" required autocomplete="off" id="pass" name="pass" class="form-box__inp-row__input">
+                                <div class="form-box__inp-row__ico js-pass" data-target="pass">
+                                    <svg width="24" height="14">
+                                        <use xlink:href="#svg-pass-toggle"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box__check-row">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="save" value="1">
+                                <span>Запомнить меня</span>
+                            </label>
+                            <a href="" class="form-box__link">Восстановить пароль</a>
+                        </div>
+                        <div class="form-box__submit">
+                            <button type="submit" class="button button--submit">Войти</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

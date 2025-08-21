@@ -18,13 +18,19 @@ body {
   padding: 27px 0;
   position: relative;
   z-index: 20;
-  box-shadow: 0 4px 30px 0 #009a99;
+  box-shadow: 0 4px 30px 0 #d9d9d9;
   background: #fff;
+
+  &--home {
+    box-shadow: 0 4px 30px 0 #009a99;
+  }
+
   &__wrap {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+
   &__nav {
     &__list {
       align-items: center;
@@ -38,6 +44,7 @@ body {
       text-transform: uppercase;
       color: #000;
       text-decoration: none;
+
       &:hover,
       &.active {
         text-decoration: underline;
@@ -47,6 +54,7 @@ body {
   }
 
 }
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -76,10 +84,12 @@ body {
   position: relative;
   z-index: 1;
   margin-bottom: 120px;
+
   &__wrap {
     padding-left: 640px;
     position: relative;
     z-index: 10;
+
     h1 {
       margin: 0;
       font-weight: 700;
@@ -89,9 +99,11 @@ body {
       padding: 0;
     }
   }
+
   &__header {
     padding-bottom: 30px;
   }
+
   &__subtitle {
     font-size: 33px;
     line-height: 1.18919;
@@ -102,6 +114,7 @@ body {
 
   &__text {
     padding-bottom: 52px;
+
     p {
       color: #fff;
       font-style: italic;
@@ -114,6 +127,7 @@ body {
 
   &__date {
     color: #fff;
+
     &__label {
       font-weight: 700;
       font-size: 33px;
@@ -121,12 +135,14 @@ body {
       text-transform: uppercase;
       padding-bottom: 20px;
     }
+
     &__value {
       font-weight: 700;
       font-size: 27px;
       line-height: 1.333;
       padding-bottom: 20px;
     }
+
     &__btn {
       width: 290px;
     }
@@ -137,6 +153,7 @@ body {
   padding: 100px 0;
   background: url("../images/dist/bg2.svg") 50% -30px no-repeat;
   background-size: 1421px 1023px;
+
   &__title {
     font-weight: 700;
     font-size: 33px;
@@ -145,6 +162,7 @@ body {
     text-align: center;
     color: #000;
     margin-bottom: 60px;
+
     b {
       font-weight: 700;
       color: #e40032;
@@ -172,6 +190,7 @@ body {
       line-height: 1.47368;
       color: #feffff;
     }
+
     &__ico {
       height: 440px;
       background-size: contain;
@@ -187,6 +206,7 @@ body {
         background-repeat: no-repeat;
         height: 411px;
       }
+
       &__caption {
         min-height: 90px;
         display: flex;
@@ -202,7 +222,7 @@ body {
       }
     }
 
-    &__count{
+    &__count {
       height: 100px;
       display: flex;
       align-items: center;
@@ -236,6 +256,7 @@ body {
       line-height: 1.18919;
       color: #000;
       border-radius: 20px;
+
       b {
         font-weight: 700;
         font-size: 37px;
@@ -248,6 +269,7 @@ body {
       .nominations__item__ico {
         background-image: url("../images/dist/nom_bg1.svg");
       }
+
       .nominations__item__ico__wrap {
         background-image: url("../images/dist/nom_img1.svg");
       }
@@ -257,9 +279,11 @@ body {
       .nominations__item__ico {
         background-image: url("../images/dist/nom_bg2.svg");
       }
+
       .nominations__item__ico__wrap {
         background-image: url("../images/dist/nom_img2.svg");
       }
+
       .nominations__item__count {
         border-color: #5dc5c6;
         color: #00b6b5;
@@ -270,9 +294,11 @@ body {
       .nominations__item__ico {
         background-image: url("../images/dist/nom_bg3.svg");
       }
+
       .nominations__item__ico__wrap {
         background-image: url("../images/dist/nom_img3.svg");
       }
+
       .nominations__item__count {
         border-color: #e40032;
         color: #e40032;
@@ -285,12 +311,14 @@ body {
 .feedback {
   position: relative;
   border-radius: 30px;
-  background:#f0f0f0 url("../images/dist/bg-feedback.png") 50% 50% no-repeat;
+  background: #f0f0f0 url("../images/dist/bg-feedback.png") 50% 50% no-repeat;
   display: flex;
   padding: 100px 50px 86px;
   margin-bottom: 60px;
+
   &__pic {
     min-width: 346px;
+
     img {
       display: block;
       width: 346px;
@@ -304,16 +332,19 @@ body {
   &__desc {
     flex-grow: 1;
     padding-left: 26px;
+
     p {
       font-size: 16px;
       line-height: 1.5;
       color: #000;
       margin-bottom: 30px;
     }
+
     &__user {
       font-size: 19px;
       line-height: 1.26316;
       color: #3ca6af;
+
       b {
         display: block;
         font-weight: 700;
@@ -333,6 +364,7 @@ body {
     background: url("../images/dist/q1.svg") 0 0 no-repeat;
     background-size: contain;
   }
+
   &::before {
     content: '';
     display: block;
@@ -351,18 +383,23 @@ body {
   padding: 87px 0 100px;
   background: url("../images/dist/video_bg.svg") 30% 0 no-repeat;
   background-size: 465px 1074px;
+
   &__item {
     display: flex;
     align-items: center;
+
     &__right {
       width: 731px;
     }
+
     &__info {
       flex-grow: 1;
       padding-right: 20px;
+
       &__ico {
         padding-bottom: 52px;
       }
+
       &__title {
         font-weight: 700;
         font-size: 27px;
@@ -370,6 +407,7 @@ body {
         color: #000;
         padding-bottom: 10px;
       }
+
       &__link {
         display: inline-flex;
         align-items: center;
@@ -377,17 +415,20 @@ body {
         font-size: 17px;
         line-height: 1.4;
         color: #898989;
+
         svg {
           margin-left: 10px;
         }
       }
     }
+
     &__wrap {
       position: relative;
       border-radius: 30px;
       box-shadow: 0 8px 25px 10px rgba(0, 182, 181, 0.25);
       background: #d9d9d9;
       display: block;
+
       img {
         display: block;
         border-radius: 30px;
@@ -425,24 +466,29 @@ body {
   background: url("../images/dist/news-bg.jpg") 50% 0 no-repeat;
   padding-top: 70px;
   padding-bottom: 100px;
+
   .container {
     position: relative;
     z-index: 10;
   }
+
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-bottom: 50px;
   }
+
   &__title {
     font-weight: 700;
     font-size: 40px;
     line-height: 1.125;
     color: #fff;
   }
-  &__item{
+
+  &__item {
     padding: 0 10px;
+
     &__img {
       img {
         display: block;
@@ -459,6 +505,7 @@ body {
       padding: 20px 0;
     }
   }
+
   &__body {
     margin: 0 -10px;
   }
@@ -474,6 +521,7 @@ body {
   line-height: 1.4;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+
   &:hover {
     text-decoration: none;
     color: #00b6b5;
@@ -483,6 +531,7 @@ body {
 .news__nav {
   display: flex;
   gap: 5px;
+
   &__btn {
     padding: 0;
     border: none;
@@ -493,16 +542,19 @@ body {
     cursor: pointer;
     opacity: 0.5;
     transition: all 0.2s ease-in-out;
+
     &:hover {
       opacity: 1;
     }
   }
 }
+
 .main__body {
   position: relative;
   z-index: 10;
   flex-grow: 1;
 }
+
 .footer {
   padding-top: 68px;
   padding-bottom: 72px;
@@ -523,6 +575,7 @@ body {
     z-index: 1;
     opacity: 0.2;
   }
+
   .container {
     position: relative;
     z-index: 10;
@@ -537,6 +590,7 @@ body {
 
   &__nav {
     flex-direction: column;
+
     li {
       a {
         display: block;
@@ -545,6 +599,7 @@ body {
         line-height: 1.5;
         color: #fff;
         text-decoration: none;
+
         &:hover {
           text-decoration: underline;
           text-decoration-skip-ink: none;
@@ -560,9 +615,11 @@ body {
     line-height: 1.5;
     color: #fff;
     padding-bottom: 12px;
+
     a {
       color: #fff;
       text-decoration: none;
+
       &:hover {
         text-decoration: underline;
         text-decoration-skip-ink: none;
@@ -583,6 +640,7 @@ body {
     flex-direction: column;
     gap: 20px;
     min-width: 46px;
+
     a {
       display: flex;
       width: 46px;
@@ -594,6 +652,7 @@ body {
       border-radius: 5px;
       opacity: 0.7;
       transition: all 0.2s ease-in-out;
+
       &:hover {
         opacity: 1;
       }
@@ -603,6 +662,7 @@ body {
 
 .faq {
   padding-bottom: 85px;
+
   &__title {
     font-weight: 700;
     font-size: 40px;
@@ -610,6 +670,7 @@ body {
     color: #000;
     padding-bottom: 50px;
   }
+
   &__accordion {
     &__item {
       padding-bottom: 15px;
@@ -653,6 +714,7 @@ body {
   vertical-align: top;
   margin-top: 16px;
 }
+
 .header__mob-nav,
 .nominations__page {
   display: none;
@@ -664,16 +726,19 @@ body {
     line-height: 1.4;
     color: #000;
   }
+
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+
     li {
       font-size: 17px;
       line-height: 1.4;
       color: #000;
       position: relative;
       padding-left: 30px;
+
       &::after {
         content: '';
         width: 4px;
@@ -692,4 +757,251 @@ body {
 
 .header__nav__mob-soc {
   display: none;
+}
+
+.form-box {
+  min-height: 100%;
+
+  padding: 60px 0 110px;
+
+  &__wrap {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 40px;
+    padding: 60px 130px;
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding-bottom: 40px;
+
+      a {
+        display: block;
+        position: relative;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.4;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        text-decoration: none;
+        padding-bottom: 5px;
+
+        &.active {
+          &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #e40032;
+            height: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  &__inp-row {
+    padding-bottom: 20px;
+    position: relative;
+    &__label {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.75;
+      color: #898989;
+      padding-bottom: 12px;
+      margin: 0;
+    }
+    &__input {
+      height: 62px;
+      width: 100%;
+      display: block;
+      border-radius: 31px;
+      border: 1px solid #d6d6d6;
+      padding: 15px 20px;
+      font-size: 16px;
+      line-height: 30px;
+      &:active,
+      &:focus,
+      &:hover {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    &__pass {
+      position: relative;
+    }
+
+    &__ico {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      padding-right: 20px;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      color: #898989;
+      &.active {
+        color: #000;
+      }
+    }
+  }
+
+  &__check-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 20px;
+  }
+
+  &__link {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 2;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #000;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &__submit {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
+}
+
+.button--submit {
+  width: 240px;
+  text-transform: uppercase;
+}
+
+.custom-checkbox {
+  input {
+    display: none;
+    &:checked + span::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_14089_1377)'%3E%3Cpath d='M11.721 0.290495C11.3497 -0.0969538 10.7469 -0.0967095 10.3749 0.290495L4.31739 6.60474L1.62507 3.79854C1.25334 3.41109 0.650755 3.41109 0.278794 3.79854C-0.0929315 4.18599 -0.0929315 4.81407 0.278794 5.20176L3.64425 8.70932C3.83011 8.90305 4.07363 9.00003 4.31715 9.00003C4.56068 9.00003 4.80466 8.90329 4.99029 8.70932L11.721 1.69371C12.0927 1.30651 12.0927 0.678188 11.721 0.290739V0.290495Z' fill='black' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_14089_1377'%3E%3Crect width='12' height='9' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    }
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 35px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+    cursor: pointer;
+    user-select: none;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #d6d6d6;
+      border-radius: 4px;
+      background-color: #fff;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      background-size: 12px 9px;
+    }
+
+    &.fs-14 {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    a {
+      color: #000;
+      text-decoration: underline;
+      text-decoration-skip-ink: none;
+    }
+  }
+}
+
+.main.main--silver{
+  background: #f3f3f3;
+}
+
+.form-box__inp-row__file {
+  height: 60px;
+}
+
+.input-file {
+  &__file {
+    position: relative;
+    display: inline-block;
+
+    &__btn {
+      background: transparent;
+      border: 1px solid #e40032;
+      color: #e40032;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    &__val {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+      display: block;
+      width: 0;
+      height: 0;
+    }
+  }
+}
+
+.input-file-list-name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #000;
+}
+.input-file-list-remove {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  background-position: 50% 50%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_14089_1502)'%3E%3Cpath d='M8.28277 7.00011L13.7343 1.54845C14.0891 1.19397 14.0891 0.620338 13.7343 0.265859C13.3798 -0.0886197 12.8062 -0.0886197 12.4517 0.265859L7.00021 5.71751L1.54872 0.265859C1.19426 -0.0886197 0.621064 -0.0886197 0.26617 0.265859C-0.0887234 0.620338 -0.0887234 1.19397 0.26617 1.54845L5.71766 7.00011L0.26617 12.4518C-0.0887234 12.8062 -0.0887234 13.3799 0.26617 13.7344C0.442766 13.9114 0.675106 13.9999 0.907447 13.9999C1.13979 13.9999 1.3717 13.911 1.54872 13.7344L7.00021 8.2827L12.4517 13.7344C12.6287 13.9114 12.8606 13.9999 13.093 13.9999C13.3253 13.9999 13.5572 13.911 13.7343 13.7344C14.0891 13.3799 14.0891 12.8062 13.7343 12.4518L8.28277 7.00011Z' fill='black' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_14089_1502'%3E%3Crect width='14' height='14' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.form-box__inp-row__input.error {
+  border-color: #ff5353 !important;
+}
+.error-message {
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #f00;
+}
+
+.form-box__inp-row .error-message {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
