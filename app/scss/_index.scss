@@ -1314,3 +1314,146 @@ body {
   line-height: 1.3;
   padding-bottom: 60px;
 }
+
+.fpad30 {
+  padding-bottom: 30px;
+}
+
+
+.nominees {
+  &__filter {
+    &__search {
+      position: relative;
+      &__submit {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        top: 0;
+        right: 0;
+        padding-right: 30px;
+        position: absolute;
+        z-index: 10;
+      }
+    }
+  }
+}
+
+
+.form-control {
+  border: 1px solid #d6d6d6;
+  height: 62px;
+  border-radius: 31px;
+  padding: 10px 40px;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #898989;
+  &::placeholder {
+    opacity: 1;
+    color: #898989;
+  }
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #d6d6d6;
+  }
+}
+.form-select {
+  border: 1px solid #d6d6d6;
+  height: 62px;
+  border-radius: 31px;
+  padding: 10px 40px;
+  font-size: 18px;
+  line-height: 1.55556;
+  color: #898989;
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='5' viewBox='0 0 8 5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_14070_516)'%3E%3Cpath d='M0.60721 0H7.39293C7.72832 0 8.00021 0.295372 8.00021 0.659334C8.00021 0.834209 7.93615 1.00167 7.82227 1.12525L4.42941 4.8072C4.19225 5.06457 3.80789 5.06457 3.57045 4.8072L0.177871 1.12525C-0.0592904 0.867886 -0.0592904 0.450473 0.177871 0.193104C0.291754 0.0695174 0.446066 0 0.60721 0Z' fill='%23E40032' /%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_14070_516'%3E%3Crect width='8' height='5' fill='white' /%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+  background-position: right 30px top 50% ;
+  background-size: 8px 5px;
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #d6d6d6;
+  }
+}
+
+.nominee {
+  display: block;
+  text-decoration: none;
+  &__img {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+  &__fio {
+    padding: 20px 0 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #000;
+    b {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #000;
+    &__item__label {
+      color: #898989;
+    }
+  }
+
+  &__right-desc {
+    padding-left: 40px;
+    h1 {
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 1.1;
+      margin: 0;
+      padding: 0 0 30px;
+      b {
+        display: block;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
+    .nominee__desc {
+      padding-bottom: 40px;
+    }
+
+    h3 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.55556;
+      color: #000;
+      margin: 0;
+      padding: 0 0 12px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.75;
+      color: #000;
+      margin-bottom: 15px;
+      margin-top: 0;
+      a {
+        color: #000;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+      }
+    }
+
+    .videos-center {
+      margin-left: 0 !important;
+    }
+  }
+}
