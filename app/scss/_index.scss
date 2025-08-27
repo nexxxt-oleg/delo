@@ -1510,8 +1510,8 @@ body {
 
     &__item {
       margin-top: 20px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
       min-height: 80px;
       border: 2px solid #c2e2e2;
       border-radius: 20px;
