@@ -391,10 +391,20 @@
 
 
 @media screen and (max-width: 768px) {
+  .button {
+    height: 48px;
+  }
+  .form-box__submit{
+    padding-top: 10px;
+  }
+  .form-box__link {
+    font-size: 12px;
+  }
   .form-box {
     padding: 40px 0;
     &__wrap {
       padding: 30px 20px;
+      border-radius: 20px;
     }
   }
   .form-box__wrap__header {
@@ -513,7 +523,7 @@
     background-size: 311px auto;
   }
   .button {
-    font-size: 16px;
+    font-size: 14px;
   }
   .nominations {
     padding: 50px 0;
@@ -524,6 +534,9 @@
   .feedback__desc p,
   .feedback__desc__user {
     font-size: 13px;
+  }
+  .custom-checkbox span.fs-14 {
+    font-size: 12px;
   }
 }
 
