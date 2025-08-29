@@ -535,8 +535,29 @@
   .feedback__desc__user {
     font-size: 13px;
   }
-  .custom-checkbox span.fs-14 {
+  .custom-checkbox span.fs-14,
+  .custom-checkbox span {
     font-size: 12px;
+  }
+  .form-box__check-row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .custom-checkbox span:after {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+  }
+
+  .custom-checkbox span {
+    padding-left: 25px;
+  }
+  .form-box__wrap__header2 p,
+  .form-box__wrap__message {
+    font-size: 14px;
+  }
+  .form-box__ps {
+    padding-top: 15px;
   }
 }
 
