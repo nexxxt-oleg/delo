@@ -1172,7 +1172,7 @@ body {
           width: 46px !important;
           height: 46px !important;
           background-color: rgba(0, 182, 181, 0.7) !important;
-          border-radius: 5px;
+          border-radius: 5px !important;
           background-position: 50% 50%;
           background-repeat: no-repeat;
         }
@@ -1202,7 +1202,9 @@ body {
 
   }
 }
-
+.ya-share2__container_mobile .ya-share2__badge {
+  border-radius: 5px !important;
+}
 .back-link-top {
   display: flex;
   align-items: center;
@@ -1546,4 +1548,20 @@ body {
       margin-left: 20px;
     }
   }
+}
+
+
+.nominee__desc p {
+  margin: 0;
+  font-size: 16px;
+  color: #898989;
+  padding: 0;
+  line-height: 24px;
+}
+
+.contacts__list__mob-label {
+  display: none;
+}
+.pagination__item--next {
+  margin-left: 5px;
 }
