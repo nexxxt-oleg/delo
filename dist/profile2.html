@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>Регистрация</title>
+    <title>Профиль</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -87,105 +87,106 @@
 
 <div class="form-box">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8">
-                <div class="form-box__wrap">
-                    <div class="form-box__wrap__header">
-                        <a href="">Войти</a>
-                        <a href="" class="active">Регистрация</a>
-                    </div>
-                    <form action="">
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="email">
-                                E-mail *
-                            </label>
-                            <input autocomplete="off" required type="email" name="email" id="email"
-                                   class="form-box__inp-row__input error">
-                            <span class="error-message">Укажите E-mail</span>
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="tel">
-                                Номер телефона *
-                            </label>
-                            <input autocomplete="off" required type="tel" name="tel" id="tel"
-                                   class="form-box__inp-row__input js-mask-phone">
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="surname">
-                                Фамилия *
-                            </label>
-                            <input autocomplete="off" required type="text" name="surname" id="surname"
-                                   class="form-box__inp-row__input">
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="name">
-                                Имя *
-                            </label>
-                            <input autocomplete="off" required type="text" name="name" id="name"
-                                   class="form-box__inp-row__input">
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="patronymic">
-                                Отчество *
-                            </label>
-                            <input autocomplete="off" required type="text" name="patronymic" id="patronymic"
-                                   class="form-box__inp-row__input">
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="photo">
-                                Фото пользователя *
-                            </label>
-                            <div class="form-box__inp-row__file input-file">
-                                <label class="input-file__file" id="photoLabel">
-                                    <input accept=".jpg,.jpeg,.png,.pdf,.tiff" required type="file" name="photo" id="photo" class="input-file__file__val">
-                                    <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
-                                </label>
-                                <div class="input-file__list" id="photoName"></div>
-                            </div>
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="pass">
-                                Пароль *
-                            </label>
-                            <div class="form-box__inp-row__pass">
-                                <input type="password" required autocomplete="off" id="pass" name="pass"
-                                       class="form-box__inp-row__input">
-                                <div class="form-box__inp-row__ico js-pass" data-target="pass">
-                                    <svg width="24" height="14">
-                                        <use xlink:href="#svg-pass-toggle"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-box__inp-row">
-                            <label class="form-box__inp-row__label" for="pass2">
-                                Подтвердите пароль *
-                            </label>
-                            <div class="form-box__inp-row__pass">
-                                <input type="password" required autocomplete="off" id="pass2" name="pass2"
-                                       class="form-box__inp-row__input">
-                                <div class="form-box__inp-row__ico js-pass" data-target="pass2">
-                                    <svg width="24" height="14">
-                                        <use xlink:href="#svg-pass-toggle"></use>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-box__check-row ps-0">
-                            <label class="custom-checkbox">
-                                <input type="checkbox" name="save" value="1">
-                                <span class="fs-14">Я подтверждаю, что даю согласие на обработку <br><a href=""
-                                                                                                        target="_blank">персональных данных</a></span>
-                            </label>
-                        </div>
-                        <div class="form-box__submit">
-                            <button type="submit" class="button button--submit">Войти</button>
-                        </div>
+        <div class="form-box__wrap__header justify-content-start profile-links">
+            <a href="" class="active">Профиль</a>
+            <a href="">Заявка на соискание премии</a>
+        </div>
 
-                    </form>
-                </div>
+        <div class="form-box__wrap form-box__wrap--profile">
+            <div class="profile ">
+                <form>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    E-mail *
+                                </label>
+                                <input class="form-box__inp-row__input" type="email" value="ivanov@mail.ru">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Номер телефона *
+                                </label>
+                                <input class="form-box__inp-row__input js-mask-phone" type="tel"
+                                       value="+7 (495) 555 55 55">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фамилия *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иванов">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Имя *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иван">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Отчество *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иванович">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фото пользователя *
+                                </label>
+                                <div class="form-box__inp-row__file input-file">
+                                    <label class="input-file__file d-none" id="photoLabel">
+                                        <input required type="file" name="photo" id="photo"
+                                               class="input-file__file__val">
+                                        <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
+                                    </label>
+                                    <div class="input-file__img" id="photoImg"><img src="images/dist/file.jpg" alt="">
+                                    </div>
+                                    <div class="input-file__list" id="photoName">
+                                        <div class="input-file-list-item">
+                                            <span class="input-file-list-name">Photo_user.jpg</span><a
+                                                href="#" onclick="removeFilesItem(); return false;"
+                                                class="input-file-list-remove"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label" for="pass">
+                                    Пароль *
+                                </label>
+                                <div class="form-box__inp-row__pass">
+                                    <input type="password" required autocomplete="off" id="pass" name="pass"
+                                           class="form-box__inp-row__input">
+                                    <div class="form-box__inp-row__ico js-pass" data-target="pass">
+                                        <svg width="24" height="14">
+                                            <use xlink:href="#svg-pass-toggle"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label" for="pass2">
+                                    Подтвердите пароль *
+                                </label>
+                                <div class="form-box__inp-row__pass">
+                                    <input type="password" required autocomplete="off" id="pass2" name="pass2"
+                                           class="form-box__inp-row__input">
+                                    <div class="form-box__inp-row__ico js-pass" data-target="pass2">
+                                        <svg width="24" height="14">
+                                            <use xlink:href="#svg-pass-toggle"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__submit">
+                        <button type="submit" class="button button--submit">Редактировать</button>
+                    </div>
+                </form>
             </div>
         </div>
+
     </div>
 </div>
 </div><!-- main__body-->

@@ -1,0 +1,219 @@
+<!--#set var="title" value="Заявка на соискание премии" -->
+<!--#include virtual="/parts/header2.html" -->
+<div class="form-box">
+    <div class="container">
+        <div class="form-box__wrap__header justify-content-start profile-links">
+            <a href="">Профиль</a>
+            <a href="" class="active">Заявка на соискание премии</a>
+        </div>
+
+        <div class="form-box__wrap form-box__wrap--profile">
+            <div class="profile ">
+                <form id="files_form" autocomplete="off">
+                    <section class="order-group">
+                        <h3 class="order-group__title">1. Выбор заявителя</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Выбор заявителя *
+                                    </label>
+                                    <select class="form-select" id="selectZai">
+                                        <option disabled selected value="">Выберите заявителя</option>
+                                        <option>Доброе дело</option>
+                                        <option>Народный ВПК</option>
+                                        <option>Народный ВПК2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="order-group">
+                        <h3 class="order-group__title">2. Об инициативе</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Фамилия номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Имя номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Отчество номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Дата рождения номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" id="birthdate" type="text" required
+                                           value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Серия и номер паспорта номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" id="passport" type="text" required value="">
+                                </div>
+
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Скан 2 и 3 страницы паспорта номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel1"
+                                             data-name="scanName1"
+                                             id="scan1"
+                                        >
+                                            <label class="input-file__file" id="scanLabel1">
+                                                <input required type="file"
+                                                       id="scanInp1"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan1"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName1">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png, размером не более 10 МБ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Скан страницы с регистрацией номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel2"
+                                             data-name="scanName2"
+                                             id="scan2"
+                                        >
+                                            <label class="input-file__file" id="scanLabel2">
+                                                <input required type="file"
+                                                       id="scanInp2"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan2"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName2">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png, размером не более 10 МБ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="form-box__inp-row__label">
+                                            Скан страницы паспорта с регистрацией номинанта или иного
+                                            документа, подтверждающего регистрацию или временное
+                                            пребывание на территории Московской области*
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel3"
+                                             data-name="scanName3"
+                                             id="scan3"
+                                        >
+                                            <label class="input-file__file" id="scanLabel3">
+                                                <input required type="file"
+                                                       id="scanInp3"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan3"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName3">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png, размером не более 10 МБ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фото номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file" >
+                                            <label class="input-file__file" id="photoLabel">
+                                                <input required type="file" name="photo" id="photo" class="input-file__file__val" accept=".jpg,.jpeg,.png,.pdf,.tiff">
+                                                <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
+                                            </label>
+                                            <div class="input-file__list" id="photoName"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png, размером не более 20 МБ</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Округ Московской области *
+                                        </label>
+                                        <select class="form-select" id="selectOkrug">
+                                            <option disabled selected value="">Выберите свой округ</option>
+                                            <option>Доброе дело</option>
+                                            <option>Народный ВПК</option>
+                                            <option>Народный ВПК2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <div class="profile__submit">
+                        <button type="submit" class="button button--submit">Редактировать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

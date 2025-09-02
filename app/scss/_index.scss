@@ -934,7 +934,7 @@ body {
 }
 
 .form-box__inp-row__file {
-  height: 60px;
+  min-height: 60px;
 }
 
 .input-file {
@@ -1569,4 +1569,44 @@ body {
 div.form-box__inp-row__input,
 input.form-box__inp-row__input[readonly] {
   background: #f0f0f0;
+}
+
+.input-file__img img {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.input-file__list {
+  .input-file-list-item {
+    padding-top: 10px;
+  }
+}
+
+.profile__submit {
+  border-top: 1px solid #d6d6d6;
+  padding-top: 40px;
+  margin-top: 15px;
+}
+
+.order-group {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #d6d6d6;
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.form-box__inp-row__desc {
+  font-weight: 400;
+  font-size: 14px;
+  color: #898989;
 }

@@ -419,6 +419,10 @@
   .form-box__inp-row__input {
     height: 48px;
     border-radius: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 38px;
+    font-size: 14px;
   }
   .form-box__wrap__header a {
     font-size: 18px;
@@ -560,6 +564,23 @@
   }
   .form-box__ps {
     padding-top: 15px;
+  }
+  .form-box__wrap.form-box__wrap--profile {
+    padding: 20px;
+  }
+  .profile__submit {
+    padding-top: 30px;
+    margin-top: 5px;
+  }
+  .profile-links a:not(.active) {
+    display: none;
+  }
+  .profile-links a.active::after {
+    display: none;
+  }
+  .profile-links {
+    margin-top: -20px;
+    padding-bottom: 10px;
   }
 }
 
