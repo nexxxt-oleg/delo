@@ -420,7 +420,7 @@ body {
 
 .news {
   position: relative;
-  background: url("../images/dist/news-bg.jpg") 50% 0 no-repeat;
+  background: url("../images/dist/news-bg.png") 50% 0 no-repeat;
   padding-top: 70px;
   padding-bottom: 100px;
 
@@ -1946,92 +1946,6 @@ input.form-box__inp-row__input[readonly] {
   }
 }
 
-.admin {
-  --bs-danger-text-emphasis: #020202;
-  --bs-danger-bg-subtle: #fdedeb;
-  --bs-danger-border-subtle: #fdedeb;
-  --bs-border-radius: 8px;
-  --bs-body-font-size: 13px;
-  --bs-font-sans-serif: "Roboto", sans-serif;
-}
-
-.alert {
-  --bs-alert-padding-x: 15px;
-  --bs-alert-padding-y: 15px;
-  --bs-alert-margin-bottom: 15px;
-  --bs-border-width: 0;
-}
-
-.admin-card__alert {
-  display: flex;
-  align-items: center;
-
-  &__ico {
-    margin-right: 15px;
-    min-width: 18px;
-  }
-}
-
-.alert-danger .admin-card__alert__ico {
-  color: #e74c3c;
-}
-
-.admin-card__row-inp {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  &__col-status {
-    min-width: 110px;
-  }
-
-  &__col {
-    flex-grow: 1;
-  }
-}
-
-
-.admin-card__input-group {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: relative;
-  height: 50px;
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: -13px;
-    width: 1px;
-    height: 100%;
-    background: #ececec;
-  }
-}
-
-.verification-status {
-  font-size: 12px;
-  line-height: 18px;
-  padding-left: 26px;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  background-position: 0 50%;
-
-  &--verified {
-    color: #02b8b2;
-  }
-}
-
-
-.admin-card .form-label {
-  font-size: 14px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  display: block;
-  margin: 0;
-}
 
 .nominations__item__ico__wrap {
   transition: all 0.3s ease-in-out;
@@ -2149,4 +2063,18 @@ input.form-box__inp-row__input[readonly] {
       font-size: 16px;
     }
   }
+}
+
+
+.col-admin-7 {
+  flex: 0 0 auto;
+  width: 55%;
+}
+.col-admin-5 {
+  flex: 0 0 auto;
+  width: 45%;
+}
+
+.fpad15 {
+  padding-bottom: 15px;
 }

@@ -74,17 +74,18 @@
                     <div class="admin-card__line"></div>
                     <div class="admin-card__wrap">
                         <div class="admin-card__alert alert alert-danger">
-                            <svg class="admin-card__alert__ico"  width="18" height="18" >
+                            <svg class="admin-card__alert__ico" width="18" height="18">
                                 <use xlink:href="#svg-info"></use>
                             </svg>
                             Поля, отмеченные знаком «*» являются обязательными для заполнения.
                         </div>
-                        <div class="row align-items-end ">
-                            <div class="col-lg-7">
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
                                 <label class="form-label">ФИО *</label>
                                 <div class="admin-card__row-inp">
                                     <div class="admin-card__row-inp__col">
-                                        <input name="fio" type="text" class="form-control" value="Космодемьянский Константин Александрович" disabled>
+                                        <input name="fio" type="text" class="form-control"
+                                               value="Космодемьянский Константин Александрович" disabled>
                                     </div>
                                     <div class="admin-card__row-inp__col-status">
                                         <div class="verification-status verification-status--verified">
@@ -93,11 +94,533 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-admin-5">
                                 <div class="admin-card__input-group">
                                     <button class="btn btn-outline-success">Редактировать</button>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Дата рождения *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input name="birthdate" type="text" class="form-control inp-date"
+                                               value="01.01.1980" disabled>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Серия и номер паспорта *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input name="passport" type="text" class="form-control" value="хххх ххххх">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-success">Сохранить</button>
+                                    <button class="btn btn-outline-success">Отменить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Скан 2 и 3 страницы паспорта *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+                                        <div class="verification-status verification-status--revision">
+                                            На доработке
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">
+                                        Оставить комментарий
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Скан страницы с регистрацией *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+                                        <div class="verification-status verification-status--revision">
+                                            На доработке
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <input type="text" class="form-control" value="Не хватает страницы" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Скан документа, подтверждающего регистрацию
+                                    на территории Московской области</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Городской округ *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="Центральный">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Фото участника *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Об участнике *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Телефон *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="+7 (945) 555-55-55">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <h3 class="admin-card__caption-h3">Социальные сети</h3>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Вконтакте</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Telegram</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Другие социальные сети</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Одноклассники</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7 tpad15">
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <div class="admin-card__line"></div>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Название инициативы *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Описание инициативы *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Номинация *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Награды</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Видеовизитка *</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <button class="btn btn-lg btn-outline-success">
+                                            <svg class="mr-10" width="15" height="18">
+                                                <use xlink:href="#svg-file"></use>
+                                            </svg>
+                                            Посмотреть файл
+                                        </button>
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Результаты инициативы</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Участвовал в премии</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Победил в премии</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-end fpad15">
+                            <div class="col-admin-7">
+                                <label class="form-label">Информация о победе</label>
+                                <div class="admin-card__row-inp">
+                                    <div class="admin-card__row-inp__col">
+                                        <input type="text" class="form-control" disabled value="vk.com/">
+                                    </div>
+                                    <div class="admin-card__row-inp__col-status">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-admin-5">
+                                <div class="admin-card__input-group">
+                                    <button class="btn btn-outline-success">Редактировать</button>
+                                    <button class="btn btn-success">Подтвердить</button>
+                                    <button class="btn btn-secondary">Отправить на доработку</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin-card__line"></div>
+                    <div class="admin-card__wrap">
+                        <div class="admin-card__footer-btn">
+                            <button class="btn btn-lg btn-success">
+                                <svg width="18" height="18" class="mr-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                    <path fill="#fff" fill-opacity="0.7" d="m256,0C114.84,0,0,114.84,0,256s114.84,256,256,256,256-114.84,256-256S397.16,0,256,0m-1.94,328.94c-8.26,8.26-19.12,12.37-30.02,12.37s-21.87-4.16-30.21-12.48l-59.35-57.51,29.72-30.66,59.58,57.75,123.93-121.62,29.95,30.4-123.58,121.75h-.02Z"/>
+                                </svg>
+                                Одобрить
+                            </button>
+                            <button class="btn btn-lg btn-warning">
+                                <svg width="18" height="18" class="mr-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                    <path fill="#fff" fill-opacity="0.7" d="m256,0C114.62,0,0,114.61,0,256s114.62,256,256,256,256-114.61,256-256C511.85,114.68,397.32.15,256,0m21.33,253.42c0,7.35-3.78,14.19-10.01,18.09l-81.92,51.2c-10.01,6.26-23.21,3.21-29.46-6.81-6.26-10.01-3.21-23.21,6.81-29.46l71.91-44.84v-92.27c0-11.78,9.55-21.33,21.33-21.33s21.33,9.55,21.33,21.33v104.08Z"/>
+                                </svg>
+                                Отправить на доработку
+                            </button>
+                            <button class="btn btn-lg btn-danger">
+                                <svg width="18" height="18" class="mr-10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                                    <path fill="#fff" fill-opacity="0.7" d="m256,0C114.62,0,0,114.61,0,256s114.62,256,256,256,256-114.61,256-256C511.85,114.68,397.32.15,256,0m0,64c39.84,0,78.69,12.48,111.08,35.67L99.67,367.06c-61.5-86.18-41.5-205.9,44.68-267.4,32.58-23.25,71.62-35.72,111.65-35.66m0,384c-39.84,0-78.67-12.47-111.06-35.67L412.33,144.92c61.51,86.17,41.53,205.89-44.64,267.41-32.59,23.26-71.65,35.74-111.69,35.68"/>
+                                </svg>
+                                Отклонить
+                            </button>
                         </div>
                     </div>
                 </div>
