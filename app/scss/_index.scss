@@ -1771,6 +1771,11 @@ input.form-box__inp-row__input[readonly] {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 14px;
+  &:hover,
+  &:active {
+    background: #cd032f;
+    color: #fff;
+  }
 }
 
 .fpad25 {
