@@ -1777,7 +1777,11 @@ input.form-box__inp-row__input[readonly] {
     color: #fff;
   }
 }
-
+.admin-card__row-inp__col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 .fpad25 {
   padding-bottom: 25px;
 }
