@@ -2087,3 +2087,17 @@ input.form-box__inp-row__input[readonly] {
 .fpad15 {
   padding-bottom: 15px;
 }
+
+.admin__table__sort {
+  white-space: nowrap;
+  &.admin__table__sort--asc {
+    &::after {
+      display: none;
+    }
+  }
+  &.admin__table__sort--desc {
+    &::before {
+      display: none;
+    }
+  }
+}
