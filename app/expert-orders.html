@@ -1,0 +1,227 @@
+<!--#set var="title" value="Заявки" -->
+<!--#include virtual="/parts/header-expert.html" -->
+
+<div class="form-box">
+    <div class="container">
+        <div class="admin__header">
+            <h1>Заявки</h1>
+            <ul class="nav admin__header__nav nav admin__header__nav--li3">
+                <li>
+                    <a href="" class="active">Все заявки</a>
+                </li>
+                <li>
+                    <a href="">Оцененные мной</a>
+                </li>
+                <li>
+                    <a href="">Без моей оценки</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="admin__filter admin-card position-relative">
+
+            <form action="">
+                <div class="admin-card__wrap">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="admin-card__inp-box">
+                                <div class="admin__filter__search">
+                                    <input name="search" type="text" class="form-control" placeholder="Поиск">
+                                    <span class="admin__filter__search__submit">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-search"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box">
+                                        <select name="1" class="custom-select form-control">
+                                            <option>Все номинации</option>
+                                            <option>Все номинации2</option>
+                                            <option>Все номинации3</option>
+                                            <option>Все номинации5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box">
+
+                                        <select name="2" class="custom-select form-control">
+                                            <option>Все городские округа</option>
+                                            <option>Все номинации2</option>
+                                            <option>Все номинации3</option>
+                                            <option>Все номинации5</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box admin-card__inp-box--submit">
+                                        <button class="btn btn-success w-100 btn-lg" type="submit">Показать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-card__line"></div>
+                <div class="admin-card__wrap admin-card__wrap--footer">
+                    <a href="" class="clear-filter">
+                        <svg width="16" href="16" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                            <path class="cls-1"
+                                  d="m256,0C114.62,0,0,114.61,0,256s114.62,256,256,256,256-114.62,256-256C511.85,114.68,397.32.15,256,0m85.33,311.19c8.67,7.98,9.23,21.48,1.25,30.14-7.98,8.67-21.48,9.23-30.14,1.25-.43-.4-.85-.82-1.25-1.25l-55.19-55.17-55.17,55.17c-8.47,8.18-21.98,7.95-30.16-.53-7.98-8.27-7.98-21.37,0-29.64l55.17-55.17-55.17-55.17c-8.18-8.48-7.95-21.98.52-30.17,8.27-7.98,21.37-7.98,29.64,0l55.17,55.17,55.19-55.17c7.98-8.67,21.48-9.23,30.14-1.25,8.67,7.98,9.23,21.48,1.25,30.14-.4.43-.82.85-1.25,1.25l-55.17,55.19,55.17,55.19Z"/>
+                        </svg>
+                        <span>Сбросить фильтры</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="admin-card admin__table">
+            <div class="table-mob">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>ID заявки</th>
+                        <th>
+                            <a href="" class="admin__table__sort admin__table__sort--desc">
+                                ФИО автора
+                            </a>
+                        </th>
+                        <th>
+                            Название заявки
+                        </th>
+                        <th>
+                            <a href="" class="admin__table__sort">
+                                Оценка
+                            </a>
+                        </th>
+                        <th>
+                            Действие
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Космодемьянский Константин
+                            Александaрович
+                        </td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--yellow">6</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-success btn--w16">Оценить</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--green">10</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--red">2</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--not">Нет оценки</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="admin__table__footer">
+                <div class="row align-items-end">
+                    <div class="col-lg-3">
+                        <div class="admin__table__footer__list">
+                            <div class="admin__table__footer__list__label">
+                                Показать на<br>
+                                странице
+                            </div>
+                            <div class="admin__table__footer__list__val">
+                                <select name="p" class="custom-select form-control">
+                                    <option>100</option>
+                                    <option>101</option>
+                                    <option>102</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="admin__table__more-btn">
+                            <button class="btn btn-lg w-100 btn-success">
+                                Показать еще
+                            </button>
+                        </div>
+                        <ul class="nav pagination">
+                            <li class="pagination__btn pagination__btn--prev">
+                                <a href="" class="pagination__btn__nav">
+                                    <svg width="14" height="12">
+                                        <use xlink:href="#svg-left"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link active">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <div class="pagination__item__dotts">...</div>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">25</a>
+                            </li>
+                            <li class="pagination__btn pagination__btn--next">
+                                <a href="" class="pagination__btn__nav">
+                                    <svg width="14" height="12">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer-admin.html" -->

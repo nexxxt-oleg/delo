@@ -2101,3 +2101,17 @@ input.form-box__inp-row__input[readonly] {
     }
   }
 }
+.clear-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #020202;
+  font-size: 13px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.admin-card__wrap.admin-card__wrap--footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

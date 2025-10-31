@@ -78,6 +78,84 @@
 }
 
 @media screen and (max-width: 991px) {
+  .admin__table {
+    padding-top: 0;
+    overflow: hidden;
+  }
+  .table-mob thead {
+    display: none;
+  }
+  .table-mob .table,
+  .table-mob tbody,
+  .table-mob tbody tr,
+  .table-mob tbody td {
+    display: block;
+  }
+  .admin-card__wrap.admin-card__wrap--footer {
+    width: 50%;
+    padding: 0 15px;
+    position: absolute;
+    z-index: 10;
+    height: 40px;
+    right: 8px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .clear-filter {
+      width: 90px;
+      svg {
+        min-width: 16px;
+      }
+    }
+  }
+  .admin-card .form-control {
+    height: 40px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+  }
+  .admin-card__inp-box {
+    padding-bottom: 10px;
+    &.admin-card__inp-box--submit {
+      padding-bottom: 0;
+      width: 50%;
+    }
+  }
+  .admin-card .btn.btn-lg {
+    height: 40px;
+  }
+  .admin-card__wrap {
+    padding: 10px 8px;
+  }
+  .admin-card__line {
+    display: none;
+  }
+  .admin__header__nav--li3 li {
+      min-width: calc(33.333% - 7px);
+  }
+  .admin__header__nav a {
+    flex-grow: 1;
+    text-align: center;
+    padding: 2px 10px;
+    font-size: 12px;
+    line-height: 16px;
+    width: 100%;
+    justify-content: center;
+    height: 36px;
+  }
+  .admin__header__nav li {
+    flex-grow: 1;
+  }
+  .admin .form-box {
+    padding-top: 20px;
+  }
+  .admin__header h1 {
+    font-size: 16px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
   .header__nav__mob-lk {
     display: block;
     .header__nav__lk__accordion {

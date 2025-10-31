@@ -1,0 +1,414 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Заявки</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+</head>
+<body class="admin">
+<div class="main main--silver" id="top">
+    <header class="header header--admin">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="header__wrap">
+                        <a href="/" class="header__logo">
+                            <img class="d-block" src="images/dist/logo-expert.svg" width="300" height="38"
+                                 loading="lazy"
+                                 alt="">
+                        </a>
+                        <div class="header__mob-nav">
+                            <div class="header__mob-nav__lk">
+                                <a href="#lkNavMob" data-bs-toggle="collapse" data-bs-target="#lkNavMob" class="header__mob-nav__lk__btn">
+                                    <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 12C12.3136 12 15 9.31359 15 6C15 2.68641 12.3136 0 9 0C5.68641 0 3 2.68641 3 6C3.00328 9.31219 5.68781 11.9967 9 12ZM9 2.00016C11.2092 2.00016 12.9998 3.79125 12.9998 6C12.9998 8.20875 11.2087 9.99984 9 9.99984C6.79125 9.99984 5.00016 8.20875 5.00016 6C5.00016 3.79125 6.79125 2.00016 9 2.00016Z" fill="black"></path>
+                                        <path d="M9 14.0002C4.03172 14.0053 0.005625 18.0319 0 23.0002C0 23.5523 0.447656 24 0.999844 24C1.55203 24 1.99969 23.5523 1.99969 23.0002C1.99969 19.1344 5.13375 16.0003 8.99953 16.0003C12.8653 16.0003 15.9994 19.1344 15.9994 23.0002C15.9994 23.5523 16.447 24 16.9992 24C17.5514 24 17.9991 23.5523 17.9991 23.0002C17.9934 18.0319 13.9673 14.0058 8.99906 14.0002H9Z" fill="black"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <a id="navbarHeaderBtn" href="#navbarHeader" data-bs-toggle="collapse" data-bs-target="#navbarHeader" class="hamburger hamburger--squeeze collapsed" aria-expanded="false">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <nav class="navbar navbar-expand-lg header__nav">
+                        <div class="collapse navbar-collapse" id="navbarHeader">
+                            <div class="header__nav__wrap">
+                                <ul class="navbar-nav header__nav__list">
+                                    <li><a href="" class="header__nav__link">На главную</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__nav__mob-lk">
+                            <div class="accordion-collapse collapse header__nav__lk__accordion" id="lkNavMob">
+                                <div class="header__nav__lk__submenu">
+
+                                    <div class="header__nav__lk__submenu__item">
+                                        <a href="">Профиль</a>
+                                    </div>
+                                    <div class="header__nav__lk__submenu__item">
+                                        <a href="">Заявка</a>
+                                    </div>
+                                    <div class="header__nav__lk__submenu__item">
+                                        <a href="">Выйти</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-lg-4 d-none d-lg-block">
+                    <div class="header__admin-info">
+                        <div class="header__admin-info__user">
+                            <div class="header__admin-info__user__ava">
+                                <img src="./images/dist/ava.svg" width="24" height="24" alt="">
+                            </div>
+                            <div class="header__admin-info__user__desc">
+                                <div class="header__admin-info__user__name">
+                                    Космодемьянский
+                                    Константин Александрович
+                                </div>
+                                <div class="header__admin-info__user__role">
+                                    Модератор
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__admin-info__btn">
+                            <button class="header__admin-info__exit">Выйти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main__body">
+
+
+<div class="form-box">
+    <div class="container">
+        <div class="admin__header">
+            <h1>Заявки</h1>
+            <ul class="nav admin__header__nav nav admin__header__nav--li3">
+                <li>
+                    <a href="" class="active">Все заявки</a>
+                </li>
+                <li>
+                    <a href="">Оцененные мной</a>
+                </li>
+                <li>
+                    <a href="">Без моей оценки</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="admin__filter admin-card position-relative">
+
+            <form action="">
+                <div class="admin-card__wrap">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="admin-card__inp-box">
+                                <div class="admin__filter__search">
+                                    <input name="search" type="text" class="form-control" placeholder="Поиск">
+                                    <span class="admin__filter__search__submit">
+                                    <svg width="18" height="18">
+                                        <use xlink:href="#svg-search"></use>
+                                    </svg>
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box">
+                                        <select name="1" class="custom-select form-control">
+                                            <option>Все номинации</option>
+                                            <option>Все номинации2</option>
+                                            <option>Все номинации3</option>
+                                            <option>Все номинации5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box">
+
+                                        <select name="2" class="custom-select form-control">
+                                            <option>Все городские округа</option>
+                                            <option>Все номинации2</option>
+                                            <option>Все номинации3</option>
+                                            <option>Все номинации5</option>
+                                        </select>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="admin-card__inp-box admin-card__inp-box--submit">
+                                        <button class="btn btn-success w-100 btn-lg" type="submit">Показать</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="admin-card__line"></div>
+                <div class="admin-card__wrap admin-card__wrap--footer">
+                    <a href="" class="clear-filter">
+                        <svg width="16" href="16" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+                            <path class="cls-1"
+                                  d="m256,0C114.62,0,0,114.61,0,256s114.62,256,256,256,256-114.62,256-256C511.85,114.68,397.32.15,256,0m85.33,311.19c8.67,7.98,9.23,21.48,1.25,30.14-7.98,8.67-21.48,9.23-30.14,1.25-.43-.4-.85-.82-1.25-1.25l-55.19-55.17-55.17,55.17c-8.47,8.18-21.98,7.95-30.16-.53-7.98-8.27-7.98-21.37,0-29.64l55.17-55.17-55.17-55.17c-8.18-8.48-7.95-21.98.52-30.17,8.27-7.98,21.37-7.98,29.64,0l55.17,55.17,55.19-55.17c7.98-8.67,21.48-9.23,30.14-1.25,8.67,7.98,9.23,21.48,1.25,30.14-.4.43-.82.85-1.25,1.25l-55.17,55.19,55.17,55.19Z"/>
+                        </svg>
+                        <span>Сбросить фильтры</span>
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="admin-card admin__table">
+            <div class="table-mob">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>ID заявки</th>
+                        <th>
+                            <a href="" class="admin__table__sort admin__table__sort--desc">
+                                ФИО автора
+                            </a>
+                        </th>
+                        <th>
+                            Название заявки
+                        </th>
+                        <th>
+                            <a href="" class="admin__table__sort">
+                                Оценка
+                            </a>
+                        </th>
+                        <th>
+                            Действие
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Космодемьянский Константин
+                            Александaрович
+                        </td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--yellow">6</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-success btn--w16">Оценить</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--green">10</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--red">2</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>160525-000001</td>
+
+                        <td>Иванов Иван Иванович</td>
+                        <td>Дорогою добра</td>
+                        <td>
+                            <span class="estimation estimation--not">Нет оценки</span>
+                        </td>
+                        <td>
+                            <a href="" class="btn btn-outline-success btn--w16">Редактировать оценку</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="admin__table__footer">
+                <div class="row align-items-end">
+                    <div class="col-lg-3">
+                        <div class="admin__table__footer__list">
+                            <div class="admin__table__footer__list__label">
+                                Показать на<br>
+                                странице
+                            </div>
+                            <div class="admin__table__footer__list__val">
+                                <select name="p" class="custom-select form-control">
+                                    <option>100</option>
+                                    <option>101</option>
+                                    <option>102</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="admin__table__more-btn">
+                            <button class="btn btn-lg w-100 btn-success">
+                                Показать еще
+                            </button>
+                        </div>
+                        <ul class="nav pagination">
+                            <li class="pagination__btn pagination__btn--prev">
+                                <a href="" class="pagination__btn__nav">
+                                    <svg width="14" height="12">
+                                        <use xlink:href="#svg-left"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">1</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link active">2</a>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">3</a>
+                            </li>
+                            <li class="pagination__item">
+                                <div class="pagination__item__dotts">...</div>
+                            </li>
+                            <li class="pagination__item">
+                                <a href="" class="pagination__item__link">25</a>
+                            </li>
+                            <li class="pagination__btn pagination__btn--next">
+                                <a href="" class="pagination__btn__nav">
+                                    <svg width="14" height="12">
+                                        <use xlink:href="#svg-right"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div><!-- main__body-->
+
+
+<div style="display: none">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <symbol id="svg-pass-toggle" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0005 0C7.41454 0 3.25621 2.45504 0.187788 6.44269C-0.0625959 6.76939 -0.0625959 7.22581 0.187788 7.55251C3.25621 11.545 7.41454 14 12 14C16.5855 14 20.7438 11.545 23.8122 7.55731C24.0626 7.23061 24.0626 6.77419 23.8122 6.44749C20.7438 2.45504 16.5859 0 12.0005 0ZM12.3294 11.9293C9.28555 12.1167 6.77189 9.66163 6.96336 6.67811C7.12047 4.21826 9.1579 2.22443 11.6716 2.07069C14.7154 1.88332 17.2291 4.33837 17.0376 7.32189C16.8756 9.77694 14.8382 11.7708 12.3294 11.9293ZM12.1767 9.65202C10.537 9.75292 9.18196 8.43171 9.28997 6.82704C9.37343 5.50103 10.4732 4.42965 11.8282 4.34317C13.4679 4.24228 14.823 5.56349 14.7149 7.16815C14.6266 8.49897 13.5268 9.57035 12.1767 9.65202Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-prev" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.0625 12.1837L3.92396 7.03392L9.0625 1.88416L7.48055 0.30221L0.748842 7.03392L7.48055 13.7656L9.0625 12.1837Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-next" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.9375 12.1837L6.07604 7.03392L0.9375 1.88416L2.51945 0.30221L9.25116 7.03392L2.51945 13.7656L0.9375 12.1837Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-search" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 359.91 359.99">
+            <path fill="currentColor"
+                  d="m353.66,323.57l-69.19-69.19c20.97-27.45,32.47-60.74,32.47-95.88,0-42.34-16.49-82.14-46.43-112.08C240.58,16.49,200.78,0,158.44,0S76.29,16.49,46.35,46.43c-61.8,61.81-61.8,162.37,0,224.17,29.94,29.94,69.74,46.43,112.08,46.43,35.13,0,68.43-11.5,95.88-32.47l69.19,69.19c4.16,4.17,9.62,6.25,15.08,6.25s10.92-2.08,15.08-6.25c8.33-8.33,8.33-21.84,0-30.17M76.52,240.43c-45.17-45.17-45.16-118.66,0-163.83,21.88-21.88,50.97-33.93,81.92-33.93s60.04,12.05,81.92,33.93c21.88,21.88,33.93,50.97,33.93,81.92s-12.05,60.04-33.93,81.92c-21.88,21.88-50.97,33.93-81.92,33.93s-60.04-12.05-81.92-33.93"/>
+        </symbol>
+
+        <symbol id="svg-left" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 298.67 255.82">
+            <path fill="currentColor"
+                  d="m277.33,106.68H64l70.19-70.19c8.37-8.3,8.42-21.8.12-30.17-.04-.04-.08-.08-.12-.12-8.32-8.27-21.76-8.27-30.08,0L12.59,97.94C4.57,105.9.05,116.72,0,128.02c.1,11.22,4.63,21.96,12.59,29.87l91.52,91.73c8.37,8.31,21.88,8.26,30.19-.11,8.31-8.37,8.26-21.88-.11-30.19l-70.19-69.97h213.33c11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33"/>
+        </symbol>
+
+        <symbol id="svg-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 298.67 255.82">
+            <path fill="currentColor"
+                  d="m21.33,149.13h213.33l-70.19,70.19c-8.37,8.3-8.42,21.8-.12,30.17.04.04.08.08.12.12,8.32,8.27,21.76,8.27,30.08,0l91.52-91.73c8.01-7.96,12.54-18.78,12.59-30.08-.1-11.22-4.63-21.96-12.59-29.87L194.56,6.2c-8.37-8.31-21.88-8.26-30.19.11-8.31,8.37-8.26,21.88.11,30.19l70.19,69.97H21.33C9.55,106.47,0,116.02,0,127.8s9.55,21.33,21.33,21.33"/>
+        </symbol>
+
+        <symbol id="svg-user" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 384 512">
+            <path fill="currentColor"
+                  d="m192,256c70.69,0,128-57.31,128-128S262.69,0,192,0,64,57.31,64,128c.07,70.66,57.34,127.93,128,128m0-213.33c47.13,0,85.33,38.21,85.33,85.33s-38.2,85.33-85.33,85.33-85.33-38.21-85.33-85.33,38.2-85.33,85.33-85.33"/>
+            <path fill="currentColor"
+                  d="m192,298.67C86.01,298.79.12,384.68,0,490.67c0,11.78,9.55,21.33,21.33,21.33s21.33-9.55,21.33-21.33c0-82.47,66.86-149.33,149.33-149.33s149.33,66.86,149.33,149.33c0,11.78,9.55,21.33,21.33,21.33s21.33-9.55,21.33-21.33c-.12-105.99-86.01-191.88-192-192"/>
+        </symbol>
+
+        <symbol id="svg-doc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 426.67 512">
+            <path fill="currentColor"
+                  d="m320,298.67c0,11.78-9.55,21.33-21.33,21.33h-170.67c-11.78,0-21.33-9.55-21.33-21.33s9.55-21.33,21.33-21.33h170.67c11.78,0,21.33,9.55,21.33,21.33m-85.33,64h-106.67c-11.78,0-21.33,9.55-21.33,21.33s9.55,21.33,21.33,21.33h106.67c11.78,0,21.33-9.55,21.33-21.33s-9.55-21.33-21.33-21.33m192-138.99v181.65c-.07,58.88-47.79,106.6-106.67,106.67H106.67c-58.88-.07-106.6-47.79-106.67-106.67V106.67C.07,47.79,47.79.07,106.67,0h96.32c39.63-.1,77.65,15.64,105.6,43.73l74.33,74.37c28.11,27.93,43.86,65.95,43.76,105.58m-148.25-149.78c-6.71-6.5-14.25-12.1-22.42-16.64v92.07c0,11.78,9.55,21.33,21.33,21.33h92.08c-4.55-8.17-10.15-15.7-16.66-22.4l-74.33-74.37Zm105.58,149.78c0-3.52-.68-6.89-1-10.35h-105.66c-35.35,0-64-28.65-64-64V43.67c-3.46-.32-6.85-1-10.35-1h-96.32c-35.35,0-64,28.65-64,64v298.67c0,35.35,28.65,64,64,64h213.33c35.35,0,64-28.65,64-64v-181.65Z"/>
+        </symbol>
+
+        <symbol id="svg-bank" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512.05 512.03">
+            <path fill="currentColor"
+                  d="m512.03,490.7c0,11.78-9.55,21.33-21.33,21.33H21.37c-11.78,0-21.33-9.55-21.33-21.33s9.55-21.33,21.33-21.33h469.33c11.78,0,21.33,9.55,21.33,21.33M6.24,182.48c-9.38-17.39-8.11-38.59,3.26-54.74,9.12-13.37,21.32-24.35,35.58-32L205.11,12.45c31.92-16.6,69.93-16.6,101.84,0l160,83.35c14.26,7.65,26.47,18.63,35.58,32,11.38,16.15,12.64,37.35,3.26,54.74-10.09,19.08-29.96,30.97-51.54,30.83h-6.23v170.67h21.33c11.78,0,21.33,9.55,21.33,21.33s-9.55,21.33-21.33,21.33H42.7c-11.78,0-21.33-9.55-21.33-21.33s9.55-21.33,21.33-21.33h21.33v-170.67h-6.23c-21.61.13-41.49-11.78-51.56-30.89Zm100.46,201.56h64v-170.67h-64v170.67Zm106.67,0h85.33v-170.67h-85.33v170.67Zm192-170.67h-64v170.67h64v-170.67ZM44.05,162.7c2.73,5.03,8.04,8.12,13.76,8h396.46c5.72.12,11.03-2.97,13.76-8,1.99-3.33,1.79-7.54-.51-10.67-5.17-7.68-12.11-14-20.25-18.43l-160-83.35c-19.57-10.15-42.85-10.15-62.42,0l-160,83.35c-8.13,4.44-15.07,10.77-20.25,18.45-2.31,3.11-2.53,7.31-.55,10.64Z"/>
+        </symbol>
+
+        <symbol id="svg-team" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512">
+            <path fill="currentColor" d="m160,277.33c-53.02,0-96-42.98-96-96s42.98-96,96-96,96,42.98,96,96c-.06,52.99-43,95.94-96,96m0-149.33c-29.46,0-53.33,23.88-53.33,53.33s23.88,53.33,53.33,53.33,53.33-23.88,53.33-53.33-23.88-53.33-53.33-53.33m160,362.67v-10.67c0-88.37-71.63-160-160-160S0,391.63,0,480v10.67c0,11.78,9.55,21.33,21.33,21.33s21.33-9.55,21.33-21.33v-10.67c0-64.8,52.53-117.33,117.33-117.33s117.33,52.53,117.33,117.33v10.67c0,11.78,9.55,21.33,21.33,21.33s21.33-9.55,21.33-21.33m192-106.67c0-82.47-66.86-149.33-149.34-149.33-36.73,0-72.18,13.54-99.56,38.03-8.85,7.78-9.72,21.26-1.94,30.11,7.78,8.85,21.26,9.72,30.11,1.94.1-.09.2-.18.29-.26,43.91-39.27,111.35-35.51,150.62,8.41,17.49,19.56,27.16,44.87,27.16,71.1,0,11.78,9.55,21.33,21.33,21.33s21.33-9.55,21.33-21.33m-138.67-192c-53.02,0-96-42.98-96-96S320.31,0,373.33,0s96,42.98,96,96c-.06,52.99-43.01,95.94-96,96m0-149.33c-29.46,0-53.33,23.88-53.33,53.33s23.88,53.33,53.33,53.33,53.33-23.88,53.33-53.33-23.88-53.33-53.33-53.33"/>
+        </symbol>
+
+        <symbol id="svg-info"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 46">
+            <path fill="currentColor" d="m39.26,6.74C30.28-2.24,15.72-2.25,6.74,6.74-2.25,15.72-2.24,30.28,6.74,39.26c8.98,8.98,23.54,8.98,32.53,0,8.98-8.98,8.98-23.55,0-32.53m-13.26,26.26c0,1.66-1.34,3-3,3s-3-1.34-3-3v-12c0-1.66,1.34-3,3-3s3,1.34,3,3v12Zm-3.05-17.13c-1.73,0-2.88-1.22-2.84-2.73-.04-1.58,1.12-2.77,2.88-2.77s2.88,1.19,2.92,2.77c0,1.51-1.15,2.73-2.95,2.73"/>
+        </symbol>
+
+        <symbol id="svg-file" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 426.67 512">
+                <path fill="currentColor" d="m382.91,118.1l-74.33-74.37C280.63,15.64,242.61-.1,202.99,0h-96.32C47.79.07.07,47.79,0,106.67v298.67c.07,58.88,47.79,106.6,106.67,106.67h213.33c58.88-.07,106.6-47.79,106.67-106.67v-181.65c.11-39.63-15.65-77.65-43.76-105.58m-30.17,30.17c6.51,6.7,12.12,14.23,16.66,22.4h-92.08c-11.78,0-21.33-9.55-21.33-21.33V57.26c8.17,4.54,15.71,10.14,22.42,16.64l74.33,74.37Zm31.25,257.07c0,35.35-28.65,64-64,64H106.67c-35.35,0-64-28.65-64-64V106.67c0-35.35,28.65-64,64-64h96.32c3.5,0,6.89.68,10.35,1v105.66c0,35.35,28.65,64,64,64h105.66c.32,3.46,1,6.83,1,10.35v181.65Z"/>
+        </symbol>
+
+    </svg>
+</div>
+
+</div><!-- end main-->
+<script src="js/vendor.min.js"></script>
+<script src="js/app.min.js"></script>
+</body>
+</html>
+
