@@ -1,0 +1,107 @@
+<!--#set var="title" value="Профиль" -->
+<!--#include virtual="/parts/header2.html" -->
+<div class="form-box">
+    <div class="container">
+        <div class="form-box__wrap__header justify-content-start profile-links">
+            <a href="" class="active">Профиль</a>
+            <a href="">Заявка на соискание премии</a>
+        </div>
+
+        <div class="form-box__wrap form-box__wrap--profile">
+            <div class="profile ">
+                <form>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    E-mail *
+                                </label>
+                                <input class="form-box__inp-row__input" type="email" value="ivanov@mail.ru">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Номер телефона *
+                                </label>
+                                <input class="form-box__inp-row__input js-mask-phone" type="tel"
+                                       value="+7 (495) 555 55 55">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фамилия *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иванов">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Имя *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иван">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Отчество *
+                                </label>
+                                <input class="form-box__inp-row__input" type="text" value="Иванович">
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фото пользователя *
+                                </label>
+                                <div class="form-box__inp-row__file input-file">
+                                    <label class="input-file__file d-none" id="photoLabel">
+                                        <input required type="file" name="photo" id="photo"
+                                               class="input-file__file__val">
+                                        <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
+                                    </label>
+                                    <div class="input-file__img" id="photoImg"><img src="images/dist/file.jpg" alt="">
+                                    </div>
+                                    <div class="input-file__list" id="photoName">
+                                        <div class="input-file-list-item">
+                                            <span class="input-file-list-name">Photo_user.jpg</span><a
+                                                href="#" onclick="removeFilesItem(); return false;"
+                                                class="input-file-list-remove"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label" for="pass">
+                                    Пароль *
+                                </label>
+                                <div class="form-box__inp-row__pass">
+                                    <input type="password" required autocomplete="off" id="pass" name="pass"
+                                           class="form-box__inp-row__input">
+                                    <div class="form-box__inp-row__ico js-pass" data-target="pass">
+                                        <svg width="24" height="14">
+                                            <use xlink:href="#svg-pass-toggle"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label" for="pass2">
+                                    Подтвердите пароль *
+                                </label>
+                                <div class="form-box__inp-row__pass">
+                                    <input type="password" required autocomplete="off" id="pass2" name="pass2"
+                                           class="form-box__inp-row__input">
+                                    <div class="form-box__inp-row__ico js-pass" data-target="pass2">
+                                        <svg width="24" height="14">
+                                            <use xlink:href="#svg-pass-toggle"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile__submit">
+                        <button type="submit" class="button button--submit">Редактировать</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--#include virtual="/parts/footer.html" -->

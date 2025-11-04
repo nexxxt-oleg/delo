@@ -1,0 +1,951 @@
+<!--#set var="title" value="Заявка на соискание премии" -->
+<!--#include virtual="/parts/header2.html" -->
+<div class="form-box">
+    <div class="container">
+        <div class="form-box__wrap__header justify-content-start profile-links">
+            <a href="">Профиль</a>
+            <a href="" class="active">Заявка на соискание премии</a>
+        </div>
+
+        <div class="form-box__wrap form-box__wrap--profile">
+            <div class="profile ">
+                <form id="order_form" autocomplete="off">
+                    <section class="order-group">
+                        <h3 class="order-group__title">1. Выбор заявителя</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Выбор заявителя *
+                                    </label>
+                                    <select class="form-select" id="selectZai">
+                                        <option disabled selected value="">Выберите заявителя</option>
+                                        <option>Доброе дело</option>
+                                        <option>Народный ВПК</option>
+                                        <option>Народный ВПК2</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="order-group">
+                        <h3 class="order-group__title">2. Об инициативе</h3>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Фамилия номинанта *
+                                    </label>
+                                    <input id="inp1" class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Имя номинанта *
+                                    </label>
+                                    <input id="inp2" class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Отчество номинанта *
+                                    </label>
+                                    <input id="inp3" class="form-box__inp-row__input" type="text" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Дата рождения номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" id="birthdate" type="text" required
+                                           value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Серия и номер паспорта номинанта *
+                                    </label>
+                                    <input class="form-box__inp-row__input" id="passport" type="text" required value="">
+                                </div>
+
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Скан 2 и 3 страницы паспорта номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel1"
+                                             data-name="scanName1"
+                                             id="scan1"
+                                        >
+                                            <label class="input-file__file" id="scanLabel1">
+                                                <input required type="file"
+                                                       id="scanInp1"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan1"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName1">
+
+                                            </div>
+                                            <div class="error-file" id="errorScan1"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png,
+                                            размером не более 10 МБ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Скан страницы с регистрацией номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel2"
+                                             data-name="scanName2"
+                                             id="scan2"
+                                        >
+                                            <label class="input-file__file" id="scanLabel2">
+                                                <input required type="file"
+                                                       id="scanInp2"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan2"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName2">
+
+                                            </div>
+                                            <div class="error-file" id="errorScan2"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png,
+                                            размером не более 10 МБ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <label class="form-box__inp-row__label">
+                                            Скан страницы паспорта с регистрацией номинанта или иного
+                                            документа, подтверждающего регистрацию или временное
+                                            пребывание на территории Московской области*
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel3"
+                                             data-name="scanName3"
+                                             id="scan3"
+                                        >
+                                            <label class="input-file__file" id="scanLabel3">
+                                                <input required type="file"
+                                                       id="scanInp3"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="10"
+                                                       data-scan="scan3"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName3">
+
+                                            </div>
+                                            <div class="error-file" id="errorScan3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png,
+                                            размером не более 10 МБ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Фото номинанта *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file">
+                                            <label class="input-file__file" id="photoLabel">
+                                                <input required type="file" name="photo" id="photo"
+                                                       class="input-file__file__val"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff">
+                                                <span class="input-file__file__btn button"
+                                                      id="photoBtn">Загрузить фото</span>
+                                            </label>
+                                            <div class="input-file__list" id="photoName"></div>
+                                            <div class="error-file" id="errorPhoto"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Файл в формате pdf, jpg, tiff или png,
+                                            размером не более 20 МБ
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Округ Московской области *
+                                        </label>
+                                        <select class="form-select" id="selectOkrug">
+                                            <option disabled selected value="">Выберите свой округ</option>
+                                            <option>Доброе дело</option>
+                                            <option>Народный ВПК</option>
+                                            <option>Народный ВПК2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    О номинанте *
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea required id="textNom" class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Краткая справка о номинанте. Данная
+                                            информация
+                                            будет размещена в открытом доступе на сайте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Телефон номинанта *
+                                        </label>
+                                        <input id="telNom" required class="form-box__inp-row__input js-mask-phone"
+                                               type="tel"
+                                               value="">
+                                    </div>
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Страница номинанта Вконтакте
+                                        </label>
+                                        <input class="form-box__inp-row__input " type="text"
+                                               value="">
+                                    </div>
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Страница номинанта в Одноклассники
+                                        </label>
+                                        <input class="form-box__inp-row__input " type="text"
+                                               value="">
+                                    </div>
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Канал номинанта в Telegram
+                                        </label>
+                                        <input class="form-box__inp-row__input " type="text"
+                                               value="">
+                                    </div>
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Ссылки на другие социальные сети
+                                        </label>
+                                        <input class="form-box__inp-row__input " type="text"
+                                               value="">
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Название инициативы *
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea required id="nameNom" class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Краткое название инициативы или проекта.
+                                            Данная
+                                            информация будет размещена в открытом доступе на сайте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Описание инициативы *
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea required id="texNom" class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Описание вклада номинанта, направленного на
+                                            поддержку специальной военной операции, и (или) подробное описание
+                                            реализованного проекта и (или) инициативы. Данная информация будет размещена
+                                            в открытом доступе на сайте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Номинация *
+                                        </label>
+                                        <select class="form-select" id="selectNom">
+                                            <option disabled selected value="">Выберите одну номинацию</option>
+                                            <option>Доброе дело</option>
+                                            <option>Народный ВПК</option>
+                                            <option>Народный ВПК2</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Награды за инициативу / проект
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" class="form-box__inp-row__input">
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Укажите полученные за инициативу/проект
+                                            награды, премии, благодарности или положительные отзывы. Или приложите
+                                            данные документы отдельными файлами. Данная информация будет размещена в
+                                            открытом доступе на сайте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Публикации в СМИ
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Ссылки на публикации в СМИ или в иных
+                                            информационных каналах об инициативе или проекте. Данная информация будет
+                                            размещена в открытом доступе на сайте.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Видеовизитка *
+                                </label>
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel4"
+                                             data-name="scanName4"
+                                             id="scan4"
+                                        >
+                                            <label class="input-file__file" id="scanLabel4">
+                                                <input type="file"
+                                                       id="scanInp4"
+                                                       accept=".mp4"
+                                                       data-filesize="50"
+                                                       data-scan="scan4"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName4">
+
+                                            </div>
+                                            <div class="error-file" id="errorVideo"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Видео в формате mp4, размером не более 50
+                                            МБ
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-box__inp-row__label tpad10">
+                                    или
+                                </div>
+                                <label class="form-box__inp-row__label">
+                                    Ссылка на видео
+                                </label>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <input type="text" id="videoLink" class="form-box__inp-row__input">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Результаты инициативы
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Добавьте текстовое описание результата
+                                            инициативы или приложите файлы в формате pdf, jpg, tiff или png, размером не
+                                            более 20 МБ
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-box__inp-row__label tpad10">
+                                    или
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__file input-file js-scan-file"
+                                             data-label="scanLabel5"
+                                             data-name="scanName5"
+                                             id="scan5"
+                                        >
+                                            <label class="input-file__file" id="scanLabel5">
+                                                <input type="file"
+                                                       id="scanInp5"
+                                                       accept=".jpg,.jpeg,.png,.pdf,.tiff"
+                                                       data-filesize="50"
+                                                       data-scan="scan4"
+                                                       class="input-file__file__val">
+                                                <span class="input-file__file__btn button">Загрузить файл</span>
+                                            </label>
+
+                                            <div class="input-file__list" id="scanName5">
+
+                                            </div>
+                                            <div class="error-file" id="errorScan5"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Участвовал ли номинант в премии в предыдущие годы?
+                                        </label>
+                                        <div class="form-box__radio">
+                                            <label class="radio-custom">
+                                                <input type="radio" name="participation" value="да" checked>
+                                                <span class="radio-custom__value">Да</span>
+                                            </label>
+                                            <label class="radio-custom">
+                                                <input type="radio" name="participation" value="Нет">
+                                                <span class="radio-custom__value">Нет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-box__inp-row">
+                                        <label class="form-box__inp-row__label">
+                                            Победил ли номинант в какой-либо номинации премии <br>в предыдущие годы?
+                                        </label>
+                                        <div class="form-box__radio">
+                                            <label class="radio-custom">
+                                                <input type="radio" name="win" value="да" checked>
+                                                <span class="radio-custom__value">Да</span>
+                                            </label>
+                                            <label class="radio-custom">
+                                                <input type="radio" name="win" value="Нет">
+                                                <span class="radio-custom__value">Нет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-box__inp-row">
+                                <label class="form-box__inp-row__label">
+                                    Информация о победе
+                                </label>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <textarea class="form-box__inp-row__text"></textarea>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box__inp-row__desc">Если да, вкратце опишите, в каком году и в
+                                            какой номинации победили
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </section>
+                    <section class="order-group">
+                        <h2 class="order-group__title">
+                            3. Банковские реквизиты
+                        </h2>
+                        <div disabled="row">
+                            <div class="col-lg-6">
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Расчетный счет *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" id="paymentAccount" required
+                                           value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        Корреспондентский счет *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" id="correspondentAccount"
+                                           required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        ИНН *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" id="inn" required value="">
+                                </div>
+                                <div class="form-box__inp-row">
+                                    <label class="form-box__inp-row__label">
+                                        БИК *
+                                    </label>
+                                    <input class="form-box__inp-row__input" type="text" id="bik" required value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-box__inp-row">
+                            <label class="form-box__inp-row__label">
+                                Реквизиты счета (выписка из банка) *
+                            </label>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row__file input-file js-scan-file"
+                                         data-label="scanLabel6"
+                                         data-name="scanName6"
+                                         id="scan6">
+                                        <label class="input-file__file" id="scanLabel6">
+                                            <input required="" type="file" id="scanInp6"
+                                                   accept=".docx,.text,.jpg,.png,.pdf,.tiff" data-filesize="10"
+                                                   data-scan="scan6" class="input-file__file__val">
+                                            <span class="input-file__file__btn button">Загрузить файл</span>
+                                        </label>
+
+                                        <div class="input-file__list" id="scanName6">
+
+                                        </div>
+                                        <div class="error-file" id="errorScan6"></div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-box__inp-row__desc">Файл в формате pdf, docx, txt, jpg, png, tiff,
+                                        размером не более 10 МБ
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="order-group order-group--last">
+                        <h2 class="order-group__title">
+                            4. Моя команда
+                        </h2>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div id="orderTeams" class="order-group__team">
+                                    <div class="order-group__team__item">
+                                        <div class="form-box__inp-row">
+                                            <label class="form-box__inp-row__label">
+                                                Фамилия *
+                                            </label>
+                                            <input class="form-box__inp-row__input" id="team_surname_1" name="team_surname[]" type="text"
+                                                   required="" value="">
+                                        </div>
+                                        <div class="form-box__inp-row">
+                                            <label class="form-box__inp-row__label">
+                                                Имя *
+                                            </label>
+                                            <input class="form-box__inp-row__input" id="team_name_1" name="team_name[]" type="text"
+                                                   required="" value="">
+                                        </div>
+                                        <div class="form-box__inp-row">
+                                            <label class="form-box__inp-row__label">
+                                                Отчество
+                                            </label>
+                                            <input class="form-box__inp-row__input" name="team_patronymic[]" type="text"
+                                                   value="">
+                                        </div>
+                                        <div class="form-box__inp-row">
+                                            <label class="form-box__inp-row__label">
+                                                Дата рождения *
+                                            </label>
+                                            <input class="form-box__inp-row__input birthdate-mask"
+                                                   id="team_birthdate_1"
+                                                   name="team_birthdate[]" required type="text" value="">
+                                        </div>
+                                        <div class="form-box__inp-row">
+                                            <label class="form-box__inp-row__label">
+                                                Округ Московской области *
+                                            </label>
+                                            <select class="form-select"  id="team_okrug_1" name="team_okrug[]" required>
+                                                <option disabled="" selected="" value="">Выберите свой округ</option>
+                                                <option>Доброе дело</option>
+                                                <option>Народный ВПК</option>
+                                                <option>Народный ВПК2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fpad25">
+                                    <span class="input-file__file__btn button button--team">Добавить</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                    <div class="profile__submit">
+                        <button  class="button button--submit">Сохранить</button>
+                        <button  class="button button--submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        if (document.getElementById('order_form')) {
+
+
+            // Создаем объект с переводами
+            const errorMessages = {
+                required: 'Oбязательно для заполнения',
+                file_required: 'Oбязательно загрузить файл',
+                file_error: 'Файл не подходит',
+                email: 'Введите корректный email адрес',
+                minLength: 'Минимальная длина: {value} символов',
+                maxLength: 'Максимальная длина: {value} символов',
+                number: 'Только числовые значения',
+                atLeastOne: 'Заполните хотя бы одно поле'
+            };
+
+            // Функция для получения переведенного сообщения
+            function getTranslatedMessage(rule, value = null) {
+                let message = errorMessages[rule];
+                if (value !== null && message.includes('{value}')) {
+                    message = message.replace('{value}', value);
+                }
+                return message;
+            }
+
+            const validator = new JustValidate('#order_form', {
+                validateBeforeSubmitting: true,
+                errorFieldCssClass: 'error',
+                errorLabelCssClass: 'error-label',
+                errorLabelStyle: {
+                    color: '#f00'
+                }
+            });
+
+
+            validator
+                .addField('#selectZai', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#inp1', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#inp2', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#inp3', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#birthdate', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#passport', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#scanInp1', [
+                    {
+                        rule: 'minFilesCount',
+                        value: 1,
+                        errorMessage: getTranslatedMessage('file_required'),
+                    },
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf'],
+                                maxSize: 10000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'application/pdf'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorScan1'
+                })
+                .addField('#scanInp2', [
+                    {
+                        rule: 'minFilesCount',
+                        value: 1,
+                        errorMessage: getTranslatedMessage('file_required'),
+                    },
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf'],
+                                maxSize: 10000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'application/pdf'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorScan2'
+                })
+                .addField('#scanInp3', [
+                    {
+                        rule: 'minFilesCount',
+                        value: 1,
+                        errorMessage: getTranslatedMessage('file_required'),
+                    },
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf'],
+                                maxSize: 10000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'application/pdf'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorScan3'
+                })
+                .addField('#photo', [
+                    {
+                        rule: 'minFilesCount',
+                        value: 1,
+                        errorMessage: getTranslatedMessage('file_required'),
+                    },
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf'],
+                                maxSize: 20000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'application/pdf'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorPhoto'
+                })
+                .addField('#selectOkrug', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#textNom', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#telNom', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#nameNom', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#selectNom', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#paymentAccount', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#correspondentAccount', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#inn', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#bik', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#scanInp4', [
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['mp4'],
+                                maxSize: 50000,
+                                types: ['video/mp4'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+                    },
+                ], {
+                    errorsContainer: '#errorVideo'
+                })
+                .addField('#videoLink', [
+                    {
+                        validator: (value, fields) => {
+                            if (value || fields['#scanInp4'].elem.value) {
+                                return true;
+                            } else {
+                                return false;
+                            }
+                        },
+                        errorMessage: 'Нет видеовизитки',
+                    },
+                ])
+                .addField('#scanInp5', [
+
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf'],
+                                maxSize: 20000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'application/pdf'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorScan5'
+                })
+                .addField('#scanInp6', [
+                    {
+                        rule: 'minFilesCount',
+                        value: 1,
+                        errorMessage: getTranslatedMessage('file_required'),
+                    },
+                    {
+                        rule: 'files',
+                        value: {
+                            files: {
+                                extensions: ['jpeg', 'jpg', 'png', 'tiff', 'pdf', 'text'],
+                                maxSize: 10000,
+                                types: ['image/jpeg', 'image/jpg', 'image/png', 'image/tiff', 'text/plain'],
+                            },
+                        },
+                        errorMessage: getTranslatedMessage('file_error'),
+
+                    },
+                ], {
+                    errorsContainer: '#errorScan6'
+                });
+
+            validator
+                .addField('#team_surname_1', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#team_name_1', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#team_birthdate_1', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ])
+                .addField('#team_okrug_1', [
+                    {
+                        rule: 'required',
+                        errorMessage: getTranslatedMessage('required')
+                    },
+                ]);
+
+        }
+    });
+</script>
+<!--#include virtual="/parts/footer.html" -->
