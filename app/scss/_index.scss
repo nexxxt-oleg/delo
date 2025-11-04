@@ -2115,3 +2115,50 @@ input.form-box__inp-row__input[readonly] {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.estimation {
+  display: inline-flex;
+  align-items: center;
+  min-width: 63px;
+  border-radius: 5px;
+  gap: 5px;
+  font-size: 13px;
+  color: #020202;
+  line-height: 1.2;
+  padding: 5px 8px;
+  &--not {
+    background: #ececec;
+  }
+  &--red {
+    background: #fdedeb;
+    svg {
+      color: #e74c3c;
+    }
+  }
+
+  &--yellow{
+    background: #fef9e7;
+    svg {
+      color: #f1c40f;
+    }
+  }
+
+  &--green {
+    background: #eafaf1;
+    svg {
+      color: #2ecc71;
+    }
+  }
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff !important;
+  padding: 32px 27px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
