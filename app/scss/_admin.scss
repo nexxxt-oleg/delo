@@ -201,11 +201,22 @@
   &.btn-success {
     --bs-btn-bg: #00b4b6;
     --bs-btn-border-color: #00b4b6;
+    &:hover,
+    &:active {
+      background: #10AFAE;
+      border-color: #10AFAE;
+    }
   }
 
   &.btn-outline-success {
     --bs-btn-border-color: #00b4b6;
     --bs-btn-color: #00b4b6;
+    &:hover,
+    &:active {
+      color: #10AFAE;
+      border-color: #10AFAE;
+      background: #fff;
+    }
   }
 
   &.disabled {

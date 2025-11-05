@@ -2282,6 +2282,10 @@ input.form-box__inp-row__input[readonly] {
 
 .button.button--green {
   background: #02b8b2;
+  &:hover,
+  &:active {
+    background: #10AFAE;
+  }
 }
 
 .voting__bottom {
@@ -2305,4 +2309,7 @@ input.form-box__inp-row__input[readonly] {
 
 .voting-mob-btn {
   display: none;
+}
+.rating-area__item {
+  display: block;
 }
