@@ -2313,3 +2313,28 @@ input.form-box__inp-row__input[readonly] {
 .rating-area__item {
   display: block;
 }
+
+.modal-content {
+   border: none;
+  --bs-modal-border-radius: 40px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 60px 30px;
+  .modal-close {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    z-index: 10;
+    border: none;
+    padding: 0;
+    background: transparent;
+    top: 30px;
+    right: 30px;
+  }
+  .form-box__wrap__message {
+    color: #000;
+    a {
+      color: #000;
+    }
+  }
+}
