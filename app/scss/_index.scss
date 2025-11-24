@@ -2338,3 +2338,8 @@ input.form-box__inp-row__input[readonly] {
     }
   }
 }
+
+.nominee__img img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
