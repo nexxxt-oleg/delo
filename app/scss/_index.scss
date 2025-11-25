@@ -2343,3 +2343,41 @@ input.form-box__inp-row__input[readonly] {
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
+
+.main--empty {
+  background: #fff url("../images/dist/bg-empty.svg") 50% 50% no-repeat;
+  background-size: cover;
+}
+
+.empty-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__header {
+    display: flex;
+    position: absolute;
+    z-index: 10;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  &__body {
+    h1 {
+      margin: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      font-size: 70px;
+      line-height: 1.14286;
+      text-align: center;
+      color: #000;
+      b {
+        color: #e40032;
+        font-weight: 700;
+      }
+    }
+  }
+}

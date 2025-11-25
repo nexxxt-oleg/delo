@@ -84,6 +84,9 @@
 
 
 @media screen and (max-width: 991px) {
+  .empty-page__body h1 {
+    font-size: 40px;
+  }
   .voting__wrap.voting-active {
     .voting__top {
       & .voting__top__label:not(.voting__top__label--alert),
@@ -672,6 +675,9 @@
 
 
 @media screen and (max-width: 768px) {
+  .empty-page__body h1 {
+    font-size: 36px;
+  }
   .admin__table .table {
     margin-bottom: 0;
   }
