@@ -44,8 +44,7 @@
   width: 100%;
   padding: 10px 40px;
   border: 1px solid #d6d6d6;
-  height: 62px;
-  border-radius: 31px;
+  height: 30px;
   background-color: #fff;
   margin: 0
 }
@@ -360,4 +359,25 @@
 
 .choices__placeholder {
   opacity: .5
+}
+@media screen and (max-width: 991px) {
+  .choices__inner {
+    padding: 5px 35px 5px 15px;
+    min-height: 48px;
+    border-radius: 24px;
+    font-size: 14px;
+  }
+  .choices[data-type*=select-one] .choices__inner {
+    padding-bottom: 5px;
+  }
+  .choices[data-type*=select-one] .choices__input {
+    padding: 5px 15px;
+  }
+  .is-open .choices__inner {
+    border-radius: 24px 24px 0 0
+  }
+
+  .is-flipped.is-open .choices__inner {
+    border-radius: 0 0 24px 24px
+  }
 }
