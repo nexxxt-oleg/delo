@@ -2232,16 +2232,20 @@ input.form-box__inp-row__input[readonly] {
 
       input {
         display: none;
+
         &:checked + .rating-area__item {
           & .rating-area__item__value {
             color: #fff;
           }
+
           &.rating-area__item--red svg {
             color: #e84c3d;
           }
+
           &.rating-area__item--yellow svg {
             color: #f1c40f;
           }
+
           &.rating-area__item--green svg {
             color: #2ecc71;
           }
@@ -2282,6 +2286,7 @@ input.form-box__inp-row__input[readonly] {
 
 .button.button--green {
   background: #02b8b2;
+
   &:hover,
   &:active {
     background: #10AFAE;
@@ -2293,6 +2298,7 @@ input.form-box__inp-row__input[readonly] {
   justify-content: center;
   gap: 10px;
   align-items: center;
+
   &__link {
     display: flex;
     align-items: center;
@@ -2301,6 +2307,7 @@ input.form-box__inp-row__input[readonly] {
     text-decoration: none;
     font-size: 14px;
     line-height: 1.2;
+
     &:hover {
       color: #02b8b2;
     }
@@ -2310,15 +2317,17 @@ input.form-box__inp-row__input[readonly] {
 .voting-mob-btn {
   display: none;
 }
+
 .rating-area__item {
   display: block;
 }
 
 .modal-content {
-   border: none;
+  border: none;
   --bs-modal-border-radius: 40px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
   padding: 60px 30px;
+
   .modal-close {
     display: block;
     width: 24px;
@@ -2331,8 +2340,10 @@ input.form-box__inp-row__input[readonly] {
     top: 30px;
     right: 30px;
   }
+
   .form-box__wrap__message {
     color: #000;
+
     a {
       color: #000;
     }
@@ -2356,6 +2367,7 @@ input.form-box__inp-row__input[readonly] {
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__header {
     display: flex;
     position: absolute;
@@ -2365,6 +2377,7 @@ input.form-box__inp-row__input[readonly] {
     width: 100%;
     justify-content: center;
   }
+
   &__body {
     h1 {
       margin: 0;
@@ -2374,6 +2387,7 @@ input.form-box__inp-row__input[readonly] {
       line-height: 1.14286;
       text-align: center;
       color: #000;
+
       b {
         color: #e40032;
         font-weight: 700;
@@ -2400,4 +2414,15 @@ input.form-box__inp-row__input[readonly] {
 
 .form-box__check-row .custom-checkbox input:not(:checked) + span:after {
   border-color: rgba(255, 0, 0, 0.5);
+}
+
+.form-box__fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  &__wrap {
+    padding: 2px 60px;
+  }
 }

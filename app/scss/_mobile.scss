@@ -675,6 +675,9 @@
 
 
 @media screen and (max-width: 768px) {
+  .form-box__fixed__wrap {
+    padding: 2px 20px;
+  }
   .empty-page__body h1 {
     font-size: 36px;
   }
