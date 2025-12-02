@@ -716,17 +716,12 @@
                         </div>
 
                     </section>
-                    <div class="profile__submit">
+                    <div class="profile__submit" id="footerForm">
 
                         <button  class="button button--submit">Отправить</button>
+                        <button  class="button button--submit button--save-fix fix" id="scrollSave">Сохранить черновик</button>
                     </div>
-                    <div class="form-box__fixed">
-                        <div class="container">
-                            <div class="form-box__fixed__wrap">
-                                <button  class="button button--submit">Сохранить</button>
-                            </div>
-                        </div>
-                    </div>
+
                 </form>
             </div>
         </div>
@@ -736,6 +731,32 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+        const btn = document.getElementById('scrollSave');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    console.log('Элемент стал видимым');
+                    btn.classList.remove('fix');
+
+                } else {
+                    console.log('Элемент скрылся');
+                    btn.classList.add('fix');
+                    //entry.target.classList.remove('visible');
+                }
+
+            });
+        }, {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        });
+
+
+        const targetElement = document.getElementById('footerForm');
+        observer.observe(targetElement);
+
+
+
         if (document.getElementById('order_form')) {
 
 

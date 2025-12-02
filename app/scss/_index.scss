@@ -2416,13 +2416,19 @@ input.form-box__inp-row__input[readonly] {
   border-color: rgba(255, 0, 0, 0.5);
 }
 
-.form-box__fixed {
+.button--save-fix {
+  margin: 0 auto;
+  width: 260px;
+}
+.profile__submit {
+  padding-right: 240px;
+}
+
+.button--save-fix.fix {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  bottom: 20px;
   z-index: 10;
-  &__wrap {
-    padding: 2px 60px;
-  }
+  left: 50%;
+  margin-left: -130px;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
 }
