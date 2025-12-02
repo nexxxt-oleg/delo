@@ -2385,3 +2385,19 @@ input.form-box__inp-row__input[readonly] {
 .f-html {
   padding: 0 !important;
 }
+
+.fs-14 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #898989;
+}
+
+.alert-bottom {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+  padding: 10px;
+}
+
+.form-box__check-row .custom-checkbox input:not(:checked) + span:after {
+  border-color: rgba(255, 0, 0, 0.5);
+}

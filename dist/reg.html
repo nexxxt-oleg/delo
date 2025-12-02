@@ -135,12 +135,23 @@
                             <label class="form-box__inp-row__label" for="photo">
                                 Фото пользователя *
                             </label>
-                            <div class="form-box__inp-row__file input-file">
-                                <label class="input-file__file" id="photoLabel">
-                                    <input accept=".jpg,.jpeg,.png,.pdf,.tiff" required type="file" name="photo" id="photo" class="input-file__file__val">
-                                    <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
-                                </label>
-                                <div class="input-file__list" id="photoName"></div>
+                            <div class="row fpad30 align-items-center">
+                                <div class="col-xl-5">
+                                    <div class="form-box__inp-row__file input-file">
+                                        <label class="input-file__file" id="photoLabel">
+                                            <input accept=".jpg,.jpeg,.png,.pdf,.tiff" required type="file" name="photo" id="photo" class="input-file__file__val">
+                                            <span class="input-file__file__btn button" id="photoBtn">Загрузить фото</span>
+                                        </label>
+                                        <div class="input-file__list" id="photoName"></div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-7 fs-14">Изображение в формате jpg или png,
+                                    размером не более 10 МБ,
+                                    <br>соотношением сторон 1:1
+                                </div>
+                            </div>
+                            <div class="alert-bottom fs-14">
+                                Пароль должен содержать минимум 8 символов: сочетание латинских букв в верхнем и нижнем регистре, цифры и специальные символы.
                             </div>
                         </div>
                         <div class="form-box__inp-row">
