@@ -84,6 +84,30 @@
 
 
 @media screen and (max-width: 991px) {
+  .about-criteria__text ul li {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  .about-criteria:after {
+    left: -200px;
+  }
+  .about-criteria__ico {
+    width: 150px;
+    min-width: 150px;
+    svg {
+      width: 80px;
+      height: auto;
+    }
+  }
+  .about-info-item__wrap {
+    font-size: 16px;
+  }
+  .about-banner {
+    background-image: none;
+  }
+  .about-banner__wrap {
+    padding-right: 0;
+  }
   .profile__submit {
     padding-right: 0;
   }
@@ -678,6 +702,59 @@
 
 
 @media screen and (max-width: 768px) {
+  .about-faq ol li {
+    font-size: 16px;
+    padding-left: 30px;
+  }
+  .about-faq ol li:before {
+    left: 0;
+    font-size: 16px;
+  }
+  .about-instructions__item span {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .about-instructions__item img {
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+  }
+  .fpad100 {
+    padding-bottom: 50px;
+  }
+  .about-instructions {
+    background: none;
+  }
+  .about-criteria__text {
+    padding: 20px;
+  }
+  .about-criteria:after {
+    left: 50%;
+    top: -200px;
+    margin: 0 0 0 -186px;
+  }
+  .about-criteria {
+    display: block;
+  }
+  .about-criteria__ico {
+    height: 150px;
+    margin: 0 auto;
+  }
+  .about-info-item__ico {
+    left: 50%;
+    top: -89px;
+    margin: 0 0 0 -88px;
+  }
+  .about-info-item__wrap {
+    padding: 117px 20px 20px;
+    min-height: auto;
+  }
+  .about-info-item {
+    padding: 89px 0 0;
+  }
+  .about-banner {
+    padding: 30px 0;
+  }
 
   .form-box__fixed__wrap {
     padding: 2px 20px;
@@ -923,6 +1000,9 @@
 }
 
 @media screen and (max-width: 574px) {
+  .faq__title {
+    font-size: 30px;
+  }
   .voting__top__stars {
     width: 280px;
     margin: 0 auto;
