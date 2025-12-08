@@ -2671,3 +2671,8 @@ input.form-box__inp-row__input[readonly] {
     width: 291px;
   }
 }
+
+.contacts__list__item a,
+.contacts__list__item div {
+  word-break: break-all;
+}
